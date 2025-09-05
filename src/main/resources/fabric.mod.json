@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "ninetofiveessentials",
+	"version": "1.0.0",
+	"name": "Nine to Five Essentials",
+	"description": "All you need to get through the day!",
+	"authors": [
+		"Jolene <3",
+		"Nova :3"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/9-5-essentials",
+		"sources": "https://github.com/jolenesjolene/9-5-Essentials"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ninetofiveessentials/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jolene.ninetofiveessentials.NineToFiveEssentials"
+		],
+		"fabric-datagen": [
+			"net.jolene.ninetofiveessentials.NineToFiveEssentialsDataGenerator"
+		],
+		"client": [
+			"net.jolene.ninetofiveessentials.NineToFiveEssentialsClient"
+		]
+	},
+	"mixins": [
+		"ninetofiveessentials.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
