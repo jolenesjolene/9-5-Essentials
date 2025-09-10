@@ -1,10 +1,7 @@
 package net.jolene.ninetofiveessentials.item.custom;
 
 
-import net.jolene.ninetofiveessentials.effect.ModEffects;
 import net.jolene.ninetofiveessentials.item.ModItems;
-import net.jolene.ninetofiveessentials.sound.ModSounds;
-import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

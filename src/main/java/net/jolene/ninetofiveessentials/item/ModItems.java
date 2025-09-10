@@ -45,12 +45,7 @@ public class ModItems {
             entries.add(BAGUETTE);
             entries.add(LONGER_BAGUETTE);
         });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(TAR_GLOB);
-        });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
-            entries.add(DARK_IS_THE_NIGHT_MUSIC_DISC);
-
-        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.add(TAR_GLOB));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(DARK_IS_THE_NIGHT_MUSIC_DISC));
     }
 }
