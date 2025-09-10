@@ -8,11 +8,18 @@
   "item.ninetofiveessentials.longer_baguette": "Longer Baguette",
   "item.ninetofiveessentials.tar_glob": "Tar Glob",
 
-  "item.ninetofiveessentials.dark_is_the_night_music_disc": "Music Disc",
+  "item.ninetofiveessentials.dark_is_the_night_music_disc": "§cWIP Music Disc",
   "item.ninetofiveessentials.dark_is_the_night.desc": "Nikita Bogoslovsky - Dark is the Night",
 
   "effect.ninetofiveessentials.ailment": "Ailment",
   "effect.ninetofiveessentials.gunpowder_rush": "Gunpowder Rush",
 
-  "item.ninetofiveessentials.five_hundred_cigarettes": "Block of Cigarettes"
+  "item.ninetofiveessentials.five_hundred_cigarettes": "Block of Cigarettes",
+
+  "advancement.ninetofiveessentials.sonic": "They Call Me Sonic",
+  "advancement.ninetofiveessentials.sonic.description": "Rush!",
+  "advancement.ninetofiveessentials.five_hundred_cigarettes": "500 CIGARETTES",
+  "advancement.ninetofiveessentials.five_hundred_cigarettes.description": "Obtain a block of cigarettes.",
+  "advancement.ninetofiveessentials.lung_cancer": "Lung Cancer",
+  "advancement.ninetofiveessentials.lung_cancer.description": "Smoke enough cigarettes to get max level ailment."
 }

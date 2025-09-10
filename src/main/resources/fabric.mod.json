@@ -2,11 +2,10 @@
 	"schemaVersion": 1,
 	"id": "ninetofiveessentials",
 	"version": "1.0.0",
-	"name": "Nine to Five Essentials",
+	"name": "9-5 Essentials",
 	"description": "All you need to get through the day!",
 	"authors": [
-		"Jolene <3",
-		"Nova :3"
+		"Jolene <3 & Nova :3"
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/9-5-essentials",
