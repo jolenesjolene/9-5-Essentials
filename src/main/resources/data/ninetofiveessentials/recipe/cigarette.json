@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:paper",
+        "ninetofiveessentials:tar_glob"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:cigarette",
+        "count": 1
+    }
+}

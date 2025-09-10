@@ -2,6 +2,7 @@ package net.jolene.ninetofiveessentials.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.jolene.ninetofiveessentials.NineToFiveEssentials;
+import net.jolene.ninetofiveessentials.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -17,6 +18,12 @@ public class ModItemGroups {
                         .entries((displayContext, entries) -> {
 
                             entries.add(ModItems.CIGARETTE);
+                            entries.add(ModItems.CRUMPLED_CIGARETTE);
+                            entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
+                            entries.add(ModItems.BAGUETTE);
+                            entries.add(ModItems.LONGER_BAGUETTE);
+                            entries.add(ModItems.TAR_GLOB);
+                            entries.add(ModItems.DARK_IS_THE_NIGHT_MUSIC_DISC);
 
 
                         }).build());

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "#minecraft:leaves",
+        "minecraft:gunpowder"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:tar_glob",
+        "count": 1
+    }
+}

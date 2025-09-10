@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ninetofiveessentials:item/dark_is_the_night_music_disc"
+  }
+}

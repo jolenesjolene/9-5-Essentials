@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.ninetofiveessentials.dark_is_the_night.desc"
+  },
+  "length_in_seconds": 155.0,
+  "sound_event": "ninetofiveessentials:dark_is_the_night"
+}

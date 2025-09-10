@@ -1,0 +1,29 @@
+{
+  "puff": {
+    "subtitle": "sounds.ninetofiveessentials.puff",
+    "sounds": [
+      "ninetofiveessentials:puff"
+    ]
+  },
+  "fizzle": {
+    "subtitle": "sounds.ninetofiveessentials.fizzle",
+    "sounds": [
+      "ninetofiveessentials:fizzle"
+    ]
+  },
+  "cough": {
+    "subtitle": "sounds.ninetofiveessentials.cough",
+    "sounds": [
+      "ninetofiveessentials:cough"
+    ]
+  },
+  "dark_is_the_night": {
+    "subtitle": "sounds.ninetofiveessentials.cough",
+    "sounds": [
+      {
+        "name": "ninetofiveessentials:dark_is_the_night",
+        "stream": true
+      }
+    ]
+  }
+}
