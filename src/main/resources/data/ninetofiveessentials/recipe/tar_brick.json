@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": "ninetofiveessentials:tar_glob",
+    "result": {
+        "id": "ninetofiveessentials:tar_brick"
+    },
+    "experience": 0.1,
+    "cookingtime": 200
+}

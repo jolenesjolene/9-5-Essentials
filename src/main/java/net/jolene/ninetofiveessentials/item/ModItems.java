@@ -23,6 +23,8 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"crumpled_cigarette")))));
     public static final Item TAR_GLOB = registerItem("tar_glob", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"tar_glob")))));
+    public static final Item TAR_BRICK = registerItem("tar_brick", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"tar_brick")))));
     public static final Item BAGUETTE = registerItem("baguette", new Item(new Item.Settings().food(ModFoodComponents.BAGUETTE)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"baguette")))));
     public static final Item LONGER_BAGUETTE = registerItem("longer_baguette", new Item(new Item.Settings().food(ModFoodComponents.LONGER_BAGUETTE)
@@ -45,7 +47,10 @@ public class ModItems {
             entries.add(BAGUETTE);
             entries.add(LONGER_BAGUETTE);
         });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.add(TAR_GLOB));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(TAR_GLOB);
+            entries.add(TAR_BRICK);
+        });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(DARK_IS_THE_NIGHT_MUSIC_DISC));
     }
 }

@@ -23,6 +23,8 @@ public class ModItemGroups {
                             entries.add(ModItems.BAGUETTE);
                             entries.add(ModItems.LONGER_BAGUETTE);
                             entries.add(ModItems.TAR_GLOB);
+                            entries.add(ModItems.TAR_BRICK);
+                            entries.add(ModBlocks.TAR_BRICKS);
                             entries.add(ModItems.DARK_IS_THE_NIGHT_MUSIC_DISC);
 
 
