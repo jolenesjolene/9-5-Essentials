@@ -11,6 +11,12 @@
       "ninetofiveessentials:fizzle"
     ]
   },
+  "disc": {
+    "subtitle": "sounds.ninetofiveessentials.disc",
+    "sounds": [
+      "ninetofiveessentials:dark_is_the_night"
+    ]
+  },
   "cough": {
     "subtitle": "sounds.ninetofiveessentials.cough",
     "sounds": [
@@ -18,7 +24,7 @@
     ]
   },
   "dark_is_the_night": {
-    "subtitle": "sounds.ninetofiveessentials.cough",
+    "subtitle": "sounds.ninetofiveessentials.dark_is_the_night",
     "sounds": [
       {
         "name": "ninetofiveessentials:dark_is_the_night",

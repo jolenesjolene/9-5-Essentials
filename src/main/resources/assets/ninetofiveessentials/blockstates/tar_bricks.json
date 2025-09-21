@@ -2,7 +2,7 @@
 	"variants": {
 		"": [
 			{
-				"model": "ninetofiveessentials:block/tar_bricks", "weight": 2
+				"model": "ninetofiveessentials:block/tar_bricks0", "weight": 2
 			},
 			{
 				"model": "ninetofiveessentials:block/tar_bricks1", "weight": 1

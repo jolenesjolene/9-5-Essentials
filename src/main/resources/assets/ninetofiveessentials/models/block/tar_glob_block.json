@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ninetofiveessentials:block/tar_glob_block"
+  }
+}

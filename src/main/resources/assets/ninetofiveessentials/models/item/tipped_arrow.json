@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft:item/tipped_arrow"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "ninetofiveessentials:item/coffee_tipped_arrow"
+    }
+  ]
+}

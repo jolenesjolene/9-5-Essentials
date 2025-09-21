@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "## ",
+        "## ",
+        "   "
+    ],
+    "key": {
+        "#": "ninetofiveessentials:coin"
+    },
+    "result": {
+        "id": "ninetofiveessentials:block_of_coins",
+        "count": 1
+    }
+}

@@ -48,7 +48,7 @@ public class LitCigaretteItem extends Item {
                     true
             ));
             user.addStatusEffect(new StatusEffectInstance(
-                    ModEffects.GUNPOWDER_RUSH,
+                    ModEffects.SERENTIY,
                     200,
                     0,
                     false,
@@ -70,14 +70,14 @@ public class LitCigaretteItem extends Item {
             ((ServerWorld) world).spawnParticles(
                     ParticleTypes.CAMPFIRE_COSY_SMOKE,
                     x, y, z,
-                    2, 0.1, 0.1, 0.1, 0.01
+                    3, 0.1, 0.1, 0.1, 0.01
             );
 
             // Damage item
             stack.damage(1, user);
 
             if (stack.getDamage() >= stack.getMaxDamage() - 1) {
-                ItemStack newItem = new ItemStack(ModItems.CRUMPLED_CIGARETTE);
+                ItemStack newItem = new ItemStack(ModItems.CIGARETTE_BUTT);
                 user.setStackInHand(hand, newItem);
 
                 world.playSound(null, user.getX(), user.getY(), user.getZ(),

@@ -16,18 +16,19 @@ public class ModEffects {
                     .addAttributeModifier(EntityAttributes.MAX_HEALTH, Identifier.of(NineToFiveEssentials.MOD_ID, "ailment"), -2f,
                             EntityAttributeModifier.Operation.ADD_VALUE));
 
-    public static final RegistryEntry<StatusEffect> GUNPOWDER_RUSH = registerStatusEffect("gunpowder_rush",
-            new GunpowderRushEffect(StatusEffectCategory.BENEFICIAL, 0x36ebab)
-                    .addAttributeModifier(EntityAttributes.MOVEMENT_SPEED,
-                            Identifier.of(NineToFiveEssentials.MOD_ID, "gunpowder_rush"),
-                            0.1,
-                            EntityAttributeModifier.Operation.ADD_VALUE)
-
-                    .addAttributeModifier(EntityAttributes.ATTACK_SPEED,
-                            Identifier.of(NineToFiveEssentials.MOD_ID, "gunpowder_rush"),
-                            5,
-                            EntityAttributeModifier.Operation.ADD_VALUE)
+    public static final RegistryEntry<StatusEffect> SERENTIY = registerStatusEffect("serenity",
+            new SerenityEffect(StatusEffectCategory.BENEFICIAL, 0x5b8eeb)
     );
+    public static final RegistryEntry<StatusEffect> OVERCAFFEINATED = registerStatusEffect(
+            "overcaffeinated",
+            new AilmentEffect(StatusEffectCategory.BENEFICIAL, 0x783f04)
+    );
+    public static final RegistryEntry<StatusEffect> JITTERS = registerStatusEffect(
+            "jitters",
+            new AilmentEffect(StatusEffectCategory.HARMFUL, 0x783f04)
+    );
+
+
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
             return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(NineToFiveEssentials.MOD_ID, name), statusEffect);
         }

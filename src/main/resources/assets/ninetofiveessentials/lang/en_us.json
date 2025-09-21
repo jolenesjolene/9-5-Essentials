@@ -3,17 +3,39 @@
 
   "item.ninetofiveessentials.cigarette": "Cigarette",
   "item.ninetofiveessentials.lit_cigarette": "Lit Cigarette",
-  "item.ninetofiveessentials.crumpled_cigarette": "Crumpled Cigarette",
+  "item.ninetofiveessentials.cigarette_butt": "Cigarette Butt",
   "item.ninetofiveessentials.baguette": "Baguette",
   "item.ninetofiveessentials.longer_baguette": "Longer Baguette",
+
   "item.ninetofiveessentials.tar_glob": "Tar Glob",
+  "item.ninetofiveessentials.tar_glob_block": "Tar Glob Block",
   "item.ninetofiveessentials.tar_brick": "Tar Brick",
 
-  "item.ninetofiveessentials.dark_is_the_night_music_disc": "§cWIP Music Disc",
-  "item.ninetofiveessentials.dark_is_the_night.desc": "Nikita Bogoslovsky - Dark is the Night",
+  "item.ninetofiveessentials.nicotiana_seeds": "Nicotiana Seeds",
+  "item.ninetofiveessentials.tobacco_leaves": "Tobacco Leaves",
+  "item.ninetofiveessentials.dried_tobacco": "Dried Tobacco",
 
-  "effect.ninetofiveessentials.ailment": "Ailment",
+  "item.ninetofiveessentials.coffee_cherries": "Coffee Cherries",
+  "item.ninetofiveessentials.coffee_beans": "Coffee Beans",
+
+
+  "item.minecraft.potion.effect.coffee": "Coffee",
+  "item.minecraft.splash_potion.effect.coffee": "Throwable Coffee",
+  "item.minecraft.lingering_potion.effect.coffee": "Lingering Coffee",
+  "item.minecraft.tipped_arrow.effect.coffee": "Coffee Tipped Arrow",
+
+  "item.ninetofiveessentials.dark_is_the_night_music_disc": "Music Disc",
+  "item.ninetofiveessentials.dark_is_the_night.desc": "Nikita Bogoslovsky - Dark is the Night",
+  "item.ninetofiveessentials.beret": "Beret",
+
+  "item.ninetofiveessentials.coin": "Coin",
+  "item.ninetofiveessentials.block_of_coins": "Block of Coins",
+
+
   "effect.ninetofiveessentials.gunpowder_rush": "Gunpowder Rush",
+  "effect.ninetofiveessentials.ailment": "Ailment",
+  "effect.ninetofiveessentials.overcaffeinated": "Overcaffeinated",
+  "effect.ninetofiveessentials.jitters": "Jitters",
 
   "item.ninetofiveessentials.five_hundred_cigarettes": "Block of Cigarettes",
   "item.ninetofiveessentials.tar_bricks": "Tar Bricks",

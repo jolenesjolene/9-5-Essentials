@@ -1,8 +1,10 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        "#minecraft:leaves",
-        "minecraft:gunpowder"
+        "minecraft:gunpowder",
+        "minecraft:gunpowder",
+        "ninetofiveessentials:dried_tobacco",
+        "ninetofiveessentials:dried_tobacco"
     ],
     "result": {
         "id": "ninetofiveessentials:tar_glob",

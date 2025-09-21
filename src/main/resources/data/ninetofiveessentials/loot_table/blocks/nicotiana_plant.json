@@ -1,0 +1,144 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "seeds_low",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ninetofiveessentials:nicotiana_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ninetofiveessentials:nicotiana_plant",
+          "properties": {
+            "age": "0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "seeds_low_1",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ninetofiveessentials:nicotiana_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ninetofiveessentials:nicotiana_plant",
+          "properties": {
+            "age": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "seeds_low_2",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ninetofiveessentials:nicotiana_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ninetofiveessentials:nicotiana_plant",
+          "properties": {
+            "age": "2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "seeds_low_3",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ninetofiveessentials:nicotiana_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ninetofiveessentials:nicotiana_plant",
+          "properties": {
+            "age": "3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "seeds_low_4",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ninetofiveessentials:nicotiana_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ninetofiveessentials:nicotiana_plant",
+          "properties": {
+            "age": "4"
+          }
+        }
+      ]
+    },
+    {
+      "name": "seeds_high",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ninetofiveessentials:nicotiana_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ninetofiveessentials:nicotiana_plant",
+          "properties": {
+            "age": "5"
+          }
+        }
+      ]
+    },
+    {
+      "name": "leaves_high",
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ninetofiveessentials:tobacco_leaves"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ninetofiveessentials:nicotiana_plant",
+          "properties": {
+            "age": "5"
+          }
+        }
+      ]
+    }
+  ]
+}

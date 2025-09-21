@@ -13,6 +13,7 @@ public class ModSounds {
     public static final SoundEvent PUFF = registerSoundEvent("puff");
     public static final SoundEvent FIZZLE = registerSoundEvent("fizzle");
     public static final SoundEvent COUGH = registerSoundEvent("cough");
+    public static final SoundEvent DISC = registerSoundEvent("disc");
 
     public static final SoundEvent DARK_IS_THE_NIGHT = registerSoundEvent("dark_is_the_night");
 public static final RegistryKey<JukeboxSong> DARK_IS_THE_NIGHT_KEY =
