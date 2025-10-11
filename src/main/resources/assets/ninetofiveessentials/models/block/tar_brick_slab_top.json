@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/slab_top",
+	"textures": {
+		"bottom": "ninetofiveessentials:block/tar_bricks",
+		"top": "ninetofiveessentials:block/tar_bricks",
+		"side": "ninetofiveessentials:block/tar_bricks"
+	}
+}

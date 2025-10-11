@@ -1,0 +1,45 @@
+{
+  "variants": {
+    "facing=north,result=0,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_idle", "y": 0 },
+    "facing=east,result=0,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_idle", "y": 90 },
+    "facing=south,result=0,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_idle", "y": 180 },
+    "facing=west,result=0,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_idle", "y": 270 },
+
+    "facing=north,rolling=true": { "model": "ninetofiveessentials:block/slot_machine_rolling", "y": 0 },
+    "facing=east,rolling=true":  { "model": "ninetofiveessentials:block/slot_machine_rolling", "y": 90 },
+    "facing=south,rolling=true": { "model": "ninetofiveessentials:block/slot_machine_rolling", "y": 180 },
+    "facing=west,rolling=true":  { "model": "ninetofiveessentials:block/slot_machine_rolling", "y": 270 },
+
+    "facing=north,result=1,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_1", "y": 0 },
+    "facing=east,result=1,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_1", "y": 90 },
+    "facing=south,result=1,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_1", "y": 180 },
+    "facing=west,result=1,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_1", "y": 270 },
+
+    "facing=north,result=2,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_2", "y": 0 },
+    "facing=east,result=2,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_2", "y": 90 },
+    "facing=south,result=2,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_2", "y": 180 },
+    "facing=west,result=2,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_2", "y": 270 },
+
+    "facing=north,result=3,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_3", "y": 0 },
+    "facing=east,result=3,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_3", "y": 90 },
+    "facing=south,result=3,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_3", "y": 180 },
+    "facing=west,result=3,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_3", "y": 270 },
+
+    "facing=north,result=4,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_4", "y": 0 },
+    "facing=east,result=4,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_4", "y": 90 },
+    "facing=south,result=4,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_4", "y": 180 },
+    "facing=west,result=4,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_4", "y": 270 },
+
+    "facing=north,result=5,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_5", "y": 0 },
+    "facing=east,result=5,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_5", "y": 90 },
+    "facing=south,result=5,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_5", "y": 180 },
+    "facing=west,result=5,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_5", "y": 270 },
+
+    "facing=north,result=6,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_6", "y": 0 },
+    "facing=east,result=6,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_6", "y": 90 },
+    "facing=south,result=6,rolling=false": { "model": "ninetofiveessentials:block/slot_machine_6", "y": 180 },
+    "facing=west,result=6,rolling=false":  { "model": "ninetofiveessentials:block/slot_machine_6", "y": 270 }
+  }
+}
+
+

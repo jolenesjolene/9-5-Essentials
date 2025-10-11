@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "ninetofiveessentials:cigarette"
+    },
+    "title": {
+      "translate": "advancement.ninetofiveessentials.root"
+    },
+    "description": {
+      "translate": "advancement.ninetofiveessentials.root.description"
+    },
+    "background": "ninetofiveessentials:gui/advancements/backgrounds/block_of_cigarettes",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

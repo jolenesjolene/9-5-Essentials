@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#M#",
+        "###"
+    ],
+    "key": {
+        "#": "ninetofiveessentials:crumpled_can",
+        "M": "minecraft:music_disc_chirp"
+    },
+    "result": {
+        "id": "ninetofiveessentials:can_can_music_disc",
+        "count": 1
+    }
+}

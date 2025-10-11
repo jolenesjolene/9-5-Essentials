@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ninetofiveessentials:item/can_can_music_disc"
+  }
+}

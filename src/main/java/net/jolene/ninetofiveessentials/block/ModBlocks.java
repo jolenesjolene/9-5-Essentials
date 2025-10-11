@@ -2,8 +2,7 @@ package net.jolene.ninetofiveessentials.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jolene.ninetofiveessentials.NineToFiveEssentials;
-import net.jolene.ninetofiveessentials.block.custom.NicotianaPlantBlock;
-import net.jolene.ninetofiveessentials.block.custom.NicotianaTopBlock;
+import net.jolene.ninetofiveessentials.block.custom.*;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -22,14 +21,17 @@ public class ModBlocks {
     public static final Block FIVE_HUNDRED_CIGARETTES = registerBlock("five_hundred_cigarettes",
             AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
 
-    public static final Block TAR_GLOB_BLOCK = registerBlock("tar_glob_block",
-            AbstractBlock.Settings.copy(Blocks.SLIME_BLOCK));
-
     public static final Block BLOCK_OF_COINS = registerBlock("block_of_coins",
             AbstractBlock.Settings.copy(Blocks.GOLD_BLOCK));
 
     public static final Block TAR_BRICKS = registerBlock("tar_bricks",
             AbstractBlock.Settings.copy(Blocks.BRICKS));
+
+    public static final Block TAR_BRICK_SLAB = registerBlock("tar_brick_slab",
+            properties -> new SlabBlock(properties.strength(2f).requiresTool()));
+    public static final Block TAR_BRICK_STAIRS = registerBlock("tar_brick_stairs",
+            properties -> new SlabBlock(properties.strength(2f).requiresTool()));
+
 
     public static final Block NICOTIANA_PLANT = registerBlockWithoutBlockItem("nicotiana_plant",
             properties -> new NicotianaPlantBlock(properties.noCollision()
@@ -41,8 +43,59 @@ public class ModBlocks {
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
+    public static final Block COIN = registerBlockWithItem("coin",
+            settings -> new CoinLayerBlock(
+                    settings
+                    .strength(0.1f)
+                    .sounds(BlockSoundGroup.LANTERN)
+                    .nonOpaque()
+                    .noCollision()  // Snow layers have no collision on top layers, you can tweak this
+            )
+    );
 
+    public static final Block DICE = registerBlockWithItem("dice",
+            settings -> new DiceBlock(
+                    settings
+                            .strength(0.0f)  // Instantly breakable
+                            .sounds(BlockSoundGroup.BONE)
+                            .nonOpaque()
+            ));
+    public static final Block CAN = registerBlockWithItem("can",
+            settings -> new CanBlock(
+                    settings
+                            .strength(0.0f)  // Instantly breakable
+                            .sounds(BlockSoundGroup.LANTERN)
+                            .nonOpaque()
 
+            ));
+    public static final Block SLOT_MACHINE = registerBlockWithItem("slot_machine",
+            settings -> new SlotMachineBlock(
+                    settings
+                            .strength(3.0f)
+                            .sounds(BlockSoundGroup.IRON)
+                            .nonOpaque()
+                            .requiresTool()
+            ));
+
+    private static Block registerBlockWithItem(String name, Function<AbstractBlock.Settings, Block> blockFactory) {
+        RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NineToFiveEssentials.MOD_ID, name));
+        AbstractBlock.Settings settings = AbstractBlock.Settings.create().registryKey(blockKey);
+
+        Block block = blockFactory.apply(settings);
+        Registry.register(Registries.BLOCK, blockKey, block);
+
+        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID, name));
+        BlockItem item = new BlockItem(block, new Item.Settings().registryKey(itemKey));
+        Registry.register(Registries.ITEM, itemKey, item);
+
+        return block;
+    }
+
+    private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
+        Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NineToFiveEssentials.MOD_ID, name))));
+        registerBlockItem(name, toRegister);
+        return Registry.register(Registries.BLOCK, Identifier.of(NineToFiveEssentials.MOD_ID, name), toRegister);
+    }
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NineToFiveEssentials.MOD_ID, name));
         Block block = new Block(blockSettings.registryKey(key));
@@ -64,10 +117,14 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
+            entries.add(ModBlocks.SLOT_MACHINE);
+            entries.add(ModBlocks.DICE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.TAR_GLOB_BLOCK);
             entries.add(ModBlocks.TAR_BRICKS);
+            entries.add(ModBlocks.TAR_BRICK_STAIRS);
+            entries.add(ModBlocks.TAR_BRICK_SLAB);
+            entries.add(ModBlocks.COIN);
             entries.add(ModBlocks.BLOCK_OF_COINS);
         });
     }

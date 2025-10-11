@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "RAR",
+        "iii"
+    ],
+    "key": {
+        "i": "minecraft:iron_ingot",
+        "R": "minecraft:redstone_lamp",
+        "A": "minecraft:apple"
+    },
+    "result": {
+        "id": "ninetofiveessentials:slot_machine",
+        "count": 1
+    }
+}

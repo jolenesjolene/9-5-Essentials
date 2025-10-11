@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"type=bottom": { "model": "ninetofiveessentials:block/tar_brick_slab" },
+		"type=top": { "model": "ninetofiveessentials:block/tar_brick_slab_top" },
+		"type=double": { "model": "ninetofiveessentials:block/tar_bricks" }
+	}
+}

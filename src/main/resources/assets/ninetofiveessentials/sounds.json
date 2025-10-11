@@ -11,10 +11,16 @@
       "ninetofiveessentials:fizzle"
     ]
   },
-  "disc": {
-    "subtitle": "sounds.ninetofiveessentials.disc",
+  "wheel": {
+    "subtitle": "sounds.ninetofiveessentials.wheel",
     "sounds": [
-      "ninetofiveessentials:dark_is_the_night"
+      "ninetofiveessentials:wheel"
+    ]
+  },
+  "result": {
+    "subtitle": "sounds.ninetofiveessentials.result",
+    "sounds": [
+      "ninetofiveessentials:result"
     ]
   },
   "cough": {
@@ -28,6 +34,15 @@
     "sounds": [
       {
         "name": "ninetofiveessentials:dark_is_the_night",
+        "stream": true
+      }
+    ]
+  },
+  "can_can": {
+    "subtitle": "sounds.ninetofiveessentials.can_can",
+    "sounds": [
+      {
+        "name": "ninetofiveessentials:can_can",
         "stream": true
       }
     ]

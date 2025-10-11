@@ -24,24 +24,48 @@
   "item.minecraft.lingering_potion.effect.coffee": "Lingering Coffee",
   "item.minecraft.tipped_arrow.effect.coffee": "Coffee Tipped Arrow",
 
+  "item.ninetofiveessentials.vodka": "Vodka",
+  "item.ninetofiveessentials.can": "Can",
+  "item.ninetofiveessentials.crumpled_can": "Crumpled Can",
+  "item.ninetofiveessentials.beer": "Can O' Beer",
+
   "item.ninetofiveessentials.dark_is_the_night_music_disc": "Music Disc",
   "item.ninetofiveessentials.dark_is_the_night.desc": "Nikita Bogoslovsky - Dark is the Night",
+  "item.ninetofiveessentials.can_can_music_disc": "Music Disc",
+  "item.ninetofiveessentials.can_can.desc": "Jacques Offenbach - Can Can",
   "item.ninetofiveessentials.beret": "Beret",
+  "tooltip.ninetofiveessentials.beret": "§7Channel your inner tortured artist!",
 
+  "item.ninetofiveessentials.slot_machine": "Slot Machine",
+  "tooltip.ninetofiveessentials.slot_machine": "§7Let’s go gambling!",
+  "item.ninetofiveessentials.dice": "Dice",
+
+  "block.ninetofiveessentials.minting_table": "Minting Table",
   "item.ninetofiveessentials.coin": "Coin",
-  "item.ninetofiveessentials.block_of_coins": "Block of Coins",
+  "tooltip.ninetofiveessentials.coin": "§7Legit... §oProbably.",
+  "item.ninetofiveessentials.minted_coin": "Coin",
+  "tooltip.ninetofiveessentials.minted_coin": "§7Minted",
+  "item.ninetofiveessentials.block_of_coins": "BIG Coin",
 
 
-  "effect.ninetofiveessentials.gunpowder_rush": "Gunpowder Rush",
+
+
+  "effect.ninetofiveessentials.serenity": "Serenity",
   "effect.ninetofiveessentials.ailment": "Ailment",
   "effect.ninetofiveessentials.overcaffeinated": "Overcaffeinated",
   "effect.ninetofiveessentials.jitters": "Jitters",
 
   "item.ninetofiveessentials.five_hundred_cigarettes": "Block of Cigarettes",
+  "tooltip.ninetofiveessentials.five_hundred_cigarettes": "§7500 CIGARETTES",
   "item.ninetofiveessentials.tar_bricks": "Tar Bricks",
+  "item.ninetofiveessentials.tar_brick_stairs": "Tar Brick Stairs",
+  "item.ninetofiveessentials.tar_brick_slab": "Tar Brick Slab",
+
+  "advancement.ninetofiveessentials.root": "9-5 Essentials",
+  "advancement.ninetofiveessentials.root.description": "Everything you need!",
 
   "advancement.ninetofiveessentials.sonic": "They Call Me Sonic",
-  "advancement.ninetofiveessentials.sonic.description": "Rush!",
+  "advancement.ninetofiveessentials.sonic.description": "Caffeine Rush!",
   "advancement.ninetofiveessentials.five_hundred_cigarettes": "500 CIGARETTES",
   "advancement.ninetofiveessentials.five_hundred_cigarettes.description": "Obtain a block of cigarettes.",
   "advancement.ninetofiveessentials.lung_cancer": "Lung Cancer",

@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"up": "ninetofiveessentials:block/dice_4",
+		"down": "ninetofiveessentials:block/dice_3",
+		"north": "ninetofiveessentials:block/dice_6",
+		"west": "ninetofiveessentials:block/dice_5",
+		"south": "ninetofiveessentials:block/dice_1",
+		"east": "ninetofiveessentials:block/dice_2",
+		"particle": "ninetofiveessentials:block/dice_2"
+	}
+}

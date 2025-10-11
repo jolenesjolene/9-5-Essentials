@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "crumpled=false": { "model": "ninetofiveessentials:block/can" },
+    "crumpled=true":  { "model": "ninetofiveessentials:block/crumpled_can" }
+  }
+}

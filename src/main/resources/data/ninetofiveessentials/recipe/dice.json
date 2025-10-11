@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:red_dye",
+        "minecraft:ink_sac",
+        "minecraft:red_dye",
+        "minecraft:ink_sac",
+        "minecraft:sand",
+        "minecraft:ink_sac",
+        "minecraft:red_dye",
+        "minecraft:ink_sac",
+        "minecraft:red_dye"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:dice",
+        "count": 1
+    }
+}

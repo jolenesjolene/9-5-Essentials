@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": "ninetofiveessentials:tar_bricks",
+    "result": {
+        "id": "ninetofiveessentials:tar_brick_stairs",
+        "count": 1
+    }
+}

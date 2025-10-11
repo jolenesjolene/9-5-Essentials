@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=up":    { "model": "ninetofiveessentials:block/dice_1" },
+    "facing=down":  { "model": "ninetofiveessentials:block/dice_2" },
+    "facing=north": { "model": "ninetofiveessentials:block/dice_3" },
+    "facing=south": { "model": "ninetofiveessentials:block/dice_4" },
+    "facing=west":  { "model": "ninetofiveessentials:block/dice_5" },
+    "facing=east":  { "model": "ninetofiveessentials:block/dice_6" }
+  }
+}

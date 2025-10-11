@@ -23,6 +23,14 @@ public class ModItemGroups {
                             entries.add(ModItems.CIGARETTE);
                             entries.add(ModItems.CIGARETTE_BUTT);
                             entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
+                            entries.add(ModItems.TOBACCO_LEAVES);
+                            entries.add(ModItems.DRIED_TOBACCO);
+                            entries.add(ModItems.NICOTIANA_SEEDS);
+                            entries.add(ModItems.TAR_GLOB);
+                            entries.add(ModItems.TAR_BRICK);
+                            entries.add(ModBlocks.TAR_BRICKS);
+                            entries.add(ModBlocks.TAR_BRICK_STAIRS);
+                            entries.add(ModBlocks.TAR_BRICK_SLAB);
                             ItemStack coffeePotion = PotionContentsComponent.createStack(Items.POTION, ModPotions.COFFEE);
                             entries.add(coffeePotion);
                             ItemStack splashCoffeePotion = PotionContentsComponent.createStack(Items.SPLASH_POTION, ModPotions.COFFEE);
@@ -31,21 +39,21 @@ public class ModItemGroups {
                             entries.add(lingeringCoffeePotion);
                             ItemStack coffeeArrow = PotionContentsComponent.createStack(Items.TIPPED_ARROW, ModPotions.COFFEE);
                             entries.add(coffeeArrow);
-                            entries.add(ModItems.NICOTIANA_SEEDS);
-                            entries.add(ModItems.TOBACCO_LEAVES);
-                            entries.add(ModItems.DRIED_TOBACCO);
-                            entries.add(ModItems.COFFEE_CHERRIES);
                             entries.add(ModItems.COFFEE_BEANS);
-                            entries.add(ModItems.BAGUETTE);
-                            entries.add(ModItems.TAR_GLOB);
-                            entries.add(ModBlocks.TAR_GLOB_BLOCK);
-                            entries.add(ModItems.TAR_BRICK);
-                            entries.add(ModBlocks.TAR_BRICKS);
-                            entries.add(ModItems.DARK_IS_THE_NIGHT_MUSIC_DISC);
+                            entries.add(ModItems.COFFEE_CHERRIES);
                             entries.add(ModItems.BERET);
-                            entries.add(ModItems.COIN);
+                            entries.add(ModItems.BAGUETTE);
+                            entries.add(ModItems.VODKA);
+                            entries.add(ModItems.BEER);
+                            entries.add(ModBlocks.CAN);
+                            entries.add(ModItems.CRUMPLED_CAN);
+                            entries.add(ModBlocks.SLOT_MACHINE);
+                            entries.add(ModBlocks.DICE);
+                            entries.add(ModBlocks.COIN);
+                            entries.add(ModItems.MINTED_COIN);
                             entries.add(ModBlocks.BLOCK_OF_COINS);
-
+                            entries.add(ModItems.DARK_IS_THE_NIGHT_MUSIC_DISC);
+                            entries.add(ModItems.CAN_CAN_MUSIC_DISC);
 
                         }).build());
 
