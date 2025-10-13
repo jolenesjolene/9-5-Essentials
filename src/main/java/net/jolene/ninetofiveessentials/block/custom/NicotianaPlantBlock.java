@@ -3,22 +3,21 @@ package net.jolene.ninetofiveessentials.block.custom;
 import net.jolene.ninetofiveessentials.block.ModBlocks;
 import net.jolene.ninetofiveessentials.item.ModItems;
 import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
-import org.apache.logging.log4j.Level;
+import org.jetbrains.annotations.Nullable;
 
 
 public class NicotianaPlantBlock extends CropBlock {
@@ -27,12 +26,10 @@ public class NicotianaPlantBlock extends CropBlock {
     }
     public static final int MAX_AGE = 5;
     public static final IntProperty AGE = IntProperty.of("age", 0, MAX_AGE);
+    public static final BooleanProperty TOP = BooleanProperty.of("top");
 
     public NicotianaPlantBlock(Settings settings) {
         super(settings);
-    }
-    public OffsetType getOffsetType() {
-        return OffsetType.XZ; // or OffsetType.XYZ
     }
 
     @Override
@@ -53,6 +50,7 @@ public class NicotianaPlantBlock extends CropBlock {
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(AGE);
+        builder.add(TOP);
     }
 
     @Override
@@ -68,38 +66,41 @@ public class NicotianaPlantBlock extends CropBlock {
 
     public void grow(ServerWorld world, BlockState state, BlockPos pos, int amount) {
         int newAge = Math.min(getAge(state) + amount, getMaxAge());
-        world.setBlockState(pos, withAge(newAge), 2);
+        world.setBlockState(pos, withAge(newAge).with(TOP, false), Block.SKIP_DROPS);
 
         if (newAge >= 3) {
-            BlockPos above = pos.up();
-            int topAge = Math.min(newAge - 3, 2);
-            BlockState topState = ModBlocks.NICOTIANA_TOP.getDefaultState().with(NicotianaTopBlock.AGE, topAge);
+            world.setBlockState(pos.up(), ModBlocks.NICOTIANA_PLANT.getDefaultState().with(AGE, newAge).with(TOP, true), Block.SKIP_DROPS);
+        }
+    }
 
-            if (world.isAir(above) || world.getBlockState(above).getBlock() instanceof NicotianaTopBlock) {
-                world.setBlockState(above, topState, 2);
+//    @Override
+//    public void afterBreak(World world, PlayerEntity player, BlockPos pos, BlockState state,
+//                           BlockEntity blockEntity, ItemStack stack) {
+//        BlockPos above = pos.up();
+//        BlockState aboveState = world.getBlockState(above);
+//        if (aboveState.getBlock() instanceof RokakakaPlantTopBlock) {
+//            world.breakBlock(above, true, player);
+//        }
+//        super.afterBreak(world, player, pos, state, blockEntity, stack);
+//    }
+//
+
+    // TODO: make this use an update because onBreak isn't called by explosions.
+    @Override
+    public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+        if (!world.isClient)
+        {
+            ServerWorld sworld = (ServerWorld) world;
+            BlockState below = sworld.getBlockState(pos.down());
+            if (below.isOf(ModBlocks.NICOTIANA_PLANT) && !below.get(TOP))
+            {
+                // TODO: make this reset the age of the bottom block or something idk
+                // jolene this is ur job
+                sworld.setBlockState(pos.down(), Blocks.AIR.getDefaultState());
             }
         }
-    }
 
-    @Override
-    public void afterBreak(World world, PlayerEntity player, BlockPos pos, BlockState state,
-                           BlockEntity blockEntity, ItemStack stack) {
-        BlockPos above = pos.up();
-        BlockState aboveState = world.getBlockState(above);
-        if (aboveState.getBlock() instanceof NicotianaTopBlock) {
-            world.breakBlock(above, true, player);
-        }
-        super.afterBreak(world, player, pos, state, blockEntity, stack);
-    }
-
-    @Override
-    public void onBroken(WorldAccess world, BlockPos pos, BlockState state) {
-        BlockPos above = pos.up();
-        BlockState aboveState = world.getBlockState(above);
-        if (aboveState.getBlock() instanceof NicotianaTopBlock) {
-            world.breakBlock(above, false);
-        }
-        super.onBroken(world, pos, state);
+        return super.onBreak(world, pos, state, player);
     }
 
     @Override
@@ -124,5 +125,13 @@ public class NicotianaPlantBlock extends CropBlock {
             int newAge = Math.min(currentAge + growth, maxAge);
             grow(serverWorld, state, pos, newAge - currentAge);
         }
+    }
+
+    @Override
+    public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
+        if (!(world instanceof ServerWorld sworld))
+            return;
+
+        sworld.setBlockState(pos, state.with(TOP, false));
     }
 }

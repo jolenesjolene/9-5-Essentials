@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ninetofiveessentials:item/coin3"
+    "layer0": "ninetofiveessentials:item/coin/coin"
   }
 }

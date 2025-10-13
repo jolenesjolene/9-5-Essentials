@@ -24,7 +24,6 @@ public class ModItemGroups {
                             entries.add(ModItems.CIGARETTE_BUTT);
                             entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
                             entries.add(ModItems.TOBACCO_LEAVES);
-                            entries.add(ModItems.DRIED_TOBACCO);
                             entries.add(ModItems.NICOTIANA_SEEDS);
                             entries.add(ModItems.TAR_GLOB);
                             entries.add(ModItems.TAR_BRICK);
@@ -64,6 +63,7 @@ public class ModItemGroups {
                             entries.add(ModBlocks.DART_BOARD);
                             entries.add(ModItems.DARK_IS_THE_NIGHT_MUSIC_DISC);
                             entries.add(ModItems.CAN_CAN_MUSIC_DISC);
+                            entries.add(ModBlocks.BRITNEY);
 
                         }).build());
 

@@ -8,7 +8,7 @@
     "key": {
         "#": "minecraft:writable_book",
         "i": "minecraft:iron_ingot",
-        "C": "minecraft:cobblestone",
+        "C": "ninetofiveessentials:coin",
         "O": "#minecraft:planks"
     },
     "result": {

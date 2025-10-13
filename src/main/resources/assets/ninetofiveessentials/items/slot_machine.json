@@ -1,6 +1,6 @@
 {
 "model": {
 "type" : "minecraft:model",
-"model": "ninetofiveessentials:item/slot_machine"
+"model": "ninetofiveessentials:block/slot_machine/slot_machine_idle"
 }
 }

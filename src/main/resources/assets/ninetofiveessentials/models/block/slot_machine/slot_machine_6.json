@@ -3,9 +3,9 @@
 	"credit": "Made with love by Jolene <3",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "ninetofiveessentials:block/slot_machine_3",
-		"1": "ninetofiveessentials:block/slot_machine",
-		"particle": "ninetofiveessentials:block/slot_machine_idle"
+		"0": "ninetofiveessentials:block/slot_machine/slot_machine_3",
+		"1": "ninetofiveessentials:block/slot_machine/slot_machine",
+		"particle": "ninetofiveessentials:block/slot_machine/slot_machine_idle"
 	},
 	"elements": [
 		{

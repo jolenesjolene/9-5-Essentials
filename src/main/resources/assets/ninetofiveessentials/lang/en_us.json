@@ -18,7 +18,6 @@
 
   "item.ninetofiveessentials.nicotiana_seeds": "Nicotiana Seeds",
   "item.ninetofiveessentials.tobacco_leaves": "Tobacco Leaves",
-  "item.ninetofiveessentials.dried_tobacco": "Dried Tobacco",
   "item.ninetofiveessentials.coffee_cherries": "Coffee Cherries",
   "item.ninetofiveessentials.coffee_beans": "Coffee Beans",
 
@@ -91,6 +90,7 @@
   "item.ninetofiveessentials.tar_brick_stairs": "Tar Brick Stairs",
   "item.ninetofiveessentials.tar_brick_slab": "Tar Brick Slab",
   "item.ninetofiveessentials.bowling_pin": "Bowling Pin",
+  "item.ninetofiveessentials.britney": "Block of Britney",
 
   "advancement.ninetofiveessentials.root": "9-5 Essentials",
   "advancement.ninetofiveessentials.root.description": "Everything you need!",

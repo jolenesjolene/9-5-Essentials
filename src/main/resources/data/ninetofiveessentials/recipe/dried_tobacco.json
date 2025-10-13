@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:campfire_cooking",
-    "ingredient": "ninetofiveessentials:tobacco_leaves",
-    "result": {
-        "id": "ninetofiveessentials:dried_tobacco"
-    },
-    "experience": 0.1,
-    "cookingtime": 600
-}

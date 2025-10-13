@@ -40,8 +40,6 @@ public class ModItems {
 
     public static final Item TOBACCO_LEAVES = registerItem("tobacco_leaves", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"tobacco_leaves")))));
-    public static final Item DRIED_TOBACCO = registerItem("dried_tobacco", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"dried_tobacco")))));
 
     public static final Item COFFEE_CHERRIES = registerItem("coffee_cherries", new Item(new Item.Settings().food(ModFoodComponents.COFFEE_CHERRIES)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_cherries")))));
@@ -113,7 +111,6 @@ public class ModItems {
             entries.add(TAR_BRICK);
             entries.add(COFFEE_BEANS);
             entries.add(TOBACCO_LEAVES);
-            entries.add(DRIED_TOBACCO);
             entries.add(PLAIN_POKER_CHIP);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {

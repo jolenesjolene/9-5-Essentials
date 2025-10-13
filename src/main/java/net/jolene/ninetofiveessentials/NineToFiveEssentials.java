@@ -14,6 +14,7 @@ import net.jolene.ninetofiveessentials.item.ModItems;
 import net.jolene.ninetofiveessentials.particle.ModParticles;
 import net.jolene.ninetofiveessentials.potion.ModPotions;
 import net.jolene.ninetofiveessentials.sound.ModSounds;
+import net.jolene.ninetofiveessentials.util.ModLootTableModifiers;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.Potions;
 import net.minecraft.util.ActionResult;
@@ -33,6 +34,7 @@ public class NineToFiveEssentials implements ModInitializer {
 		ModEffects.registerEffects();
 		ModSounds.registerModSounds();
 		ModParticles.registerModParticles();
+		ModLootTableModifiers.registerLootTableModifiers();
 		ModItemTooltips.registerModItemTooltips();
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(Potions.WATER, ModItems.COFFEE_BEANS, ModPotions.COFFEE);

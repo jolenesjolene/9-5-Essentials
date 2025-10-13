@@ -18,6 +18,10 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class ModBlocks {
+
+    public static final Block BRITNEY = registerBlock("britney",
+            AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
+
     public static final Block FIVE_HUNDRED_CIGARETTES = registerBlock("five_hundred_cigarettes",
             AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
 
@@ -35,11 +39,6 @@ public class ModBlocks {
 
     public static final Block NICOTIANA_PLANT = registerBlockWithoutBlockItem("nicotiana_plant",
             properties -> new NicotianaPlantBlock(properties.noCollision()
-                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
-                    .pistonBehavior(PistonBehavior.DESTROY)));
-
-    public static final Block NICOTIANA_TOP = registerBlockWithoutBlockItem("nicotiana_top",
-            properties -> new NicotianaTopBlock(properties.noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 

@@ -1,5 +1,6 @@
 package net.jolene.ninetofiveessentials.block.custom;
 
+import net.jolene.ninetofiveessentials.particle.ModParticles;
 import net.jolene.ninetofiveessentials.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -194,6 +195,7 @@ public class SlotMachineBlock extends Block {
 
                     world.setBlockState(pos, resultState, Block.NOTIFY_ALL);
                     spawnNoteParticle(world, pos);
+                    spawnCoinParticles(world, pos); // ✅ NEW: spawn coins
                     playSound(world, pos, ModSounds.RESULT);
                 }
             }
@@ -225,7 +227,16 @@ public class SlotMachineBlock extends Block {
         world.spawnParticles(ParticleTypes.NOTE, x, y, z, 1, 0, 0, 0, 0);
     }
 
+    // ✅ NEW METHOD: spawn 10 COIN particles
+    private void spawnCoinParticles(ServerWorld world, BlockPos pos) {
+        double x = pos.getX() + 0.5;
+        double y = pos.getY() + 0.5;
+        double z = pos.getZ() + 0.5;
+        world.spawnParticles(ModParticles.COIN, x, y, z, 20, 0.5, 0.5, 0.5, 2.0);
+    }
+
     private void playSound(World world, BlockPos pos, SoundEvent sound) {
         world.playSound(null, pos, sound, SoundCategory.BLOCKS, 1.0F, 1.0F);
     }
 }
+

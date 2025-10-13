@@ -8,34 +8,27 @@
         "threshold": 1,
         "model": {
           "type": "minecraft:model",
-          "model": "ninetofiveessentials:item/coin0"
+          "model": "ninetofiveessentials:item/coin/coin"
         }
       },
       {
         "threshold": 2,
         "model": {
           "type": "minecraft:model",
-          "model": "ninetofiveessentials:item/coin1"
+          "model": "ninetofiveessentials:item/coin/coin_small_stack"
         }
       },
       {
-        "threshold": 23,
+        "threshold": 32,
         "model": {
           "type": "minecraft:model",
-          "model": "ninetofiveessentials:item/coin2"
-        }
-      },
-      {
-        "threshold": 44,
-        "model": {
-          "type": "minecraft:model",
-          "model": "ninetofiveessentials:item/coin3"
+          "model": "ninetofiveessentials:item/coin/coin_large_stack"
         }
       }
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "ninetofiveessentials:item/coin0"
+      "model": "ninetofiveessentials:item/coin/coin"
     }
   }
 }
