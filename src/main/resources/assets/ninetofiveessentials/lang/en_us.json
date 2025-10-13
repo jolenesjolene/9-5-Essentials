@@ -2,35 +2,36 @@
   "itemgroup.ninetofiveessentials.ninetofiveessentials": "9-5 Essentials",
 
   "item.ninetofiveessentials.cigarette": "Cigarette",
+  "tooltip.ninetofiveessentials.cigarette": "§7Unlit",
   "item.ninetofiveessentials.lit_cigarette": "Lit Cigarette",
+  "tooltip.ninetofiveessentials.lit_cigarette": "§9Ailment (10:00)",
   "item.ninetofiveessentials.cigarette_butt": "Cigarette Butt",
-  "item.ninetofiveessentials.baguette": "Baguette",
-  "item.ninetofiveessentials.longer_baguette": "Longer Baguette",
-
-  "item.ninetofiveessentials.tar_glob": "Tar Glob",
-  "item.ninetofiveessentials.tar_glob_block": "Tar Glob Block",
-  "item.ninetofiveessentials.tar_brick": "Tar Brick",
-
-  "item.ninetofiveessentials.nicotiana_seeds": "Nicotiana Seeds",
-  "item.ninetofiveessentials.tobacco_leaves": "Tobacco Leaves",
-  "item.ninetofiveessentials.dried_tobacco": "Dried Tobacco",
-
-  "item.ninetofiveessentials.coffee_cherries": "Coffee Cherries",
-  "item.ninetofiveessentials.coffee_beans": "Coffee Beans",
-
 
   "item.minecraft.potion.effect.coffee": "Coffee",
   "item.minecraft.splash_potion.effect.coffee": "Throwable Coffee",
   "item.minecraft.lingering_potion.effect.coffee": "Lingering Coffee",
   "item.minecraft.tipped_arrow.effect.coffee": "Coffee Tipped Arrow",
 
+
   "item.ninetofiveessentials.vodka": "Vodka",
   "item.ninetofiveessentials.beer": "Can O' Beer",
 
-  "item.ninetofiveessentials.dark_is_the_night_music_disc": "Music Disc",
-  "item.ninetofiveessentials.dark_is_the_night.desc": "Nikita Bogoslovsky - Dark is the Night",
-  "item.ninetofiveessentials.can_can_music_disc": "Music Disc",
-  "item.ninetofiveessentials.can_can.desc": "Jacques Offenbach - Can Can",
+  "item.ninetofiveessentials.nicotiana_seeds": "Nicotiana Seeds",
+  "item.ninetofiveessentials.tobacco_leaves": "Tobacco Leaves",
+  "item.ninetofiveessentials.dried_tobacco": "Dried Tobacco",
+  "item.ninetofiveessentials.coffee_cherries": "Coffee Cherries",
+  "item.ninetofiveessentials.coffee_beans": "Coffee Beans",
+
+  "item.ninetofiveessentials.tar_glob": "Tar Glob",
+  "item.ninetofiveessentials.tar_glob_block": "Tar Glob Block",
+  "item.ninetofiveessentials.tar_brick": "Tar Brick",
+
+  "item.ninetofiveessentials.dextro_tablet": "Dextro Tablet",
+
+  "item.ninetofiveessentials.baguette": "Baguette",
+
+
+
   "item.ninetofiveessentials.beret": "Beret",
   "tooltip.ninetofiveessentials.beret": "§7Channel your inner tortured artist!",
 
@@ -38,15 +39,46 @@
   "tooltip.ninetofiveessentials.slot_machine": "§7Let’s go gambling!",
   "item.ninetofiveessentials.dice": "Dice",
 
-  "block.ninetofiveessentials.minting_table": "Minting Table",
+  "item.ninetofiveessentials.minting_table": "Minting Table",
   "item.ninetofiveessentials.coin": "Coin",
   "tooltip.ninetofiveessentials.coin": "§7Legit... §oProbably.",
   "item.ninetofiveessentials.minted_coin": "Coin",
   "tooltip.ninetofiveessentials.minted_coin": "§7Minted",
   "item.ninetofiveessentials.block_of_coins": "BIG Coin",
 
+  "item.ninetofiveessentials.plain_poker_chip": "Plain Poker Chip",
+  "item.ninetofiveessentials.plain_poker_chip.tooltip": "§7No Value",
+  "item.ninetofiveessentials.white_poker_chip": "Poker Chip",
+  "tooltip.ninetofiveessentials.white_poker_chip": "§7White ⏵ §o$1",
+  "tooltip.ninetofiveessentials.white_poker_chip.value": "§7Value: §f§o$1",
+  "item.ninetofiveessentials.red_poker_chip": "Poker Chip",
+  "tooltip.ninetofiveessentials.red_poker_chip": "§7Red ⏵ §o$5",
+  "tooltip.ninetofiveessentials.red_poker_chip.value": "§7Value: §f§o$5",
+  "item.ninetofiveessentials.orange_poker_chip": "Poker Chip",
+  "tooltip.ninetofiveessentials.orange_poker_chip": "§7Orange ⏵ §o$10",
+  "tooltip.ninetofiveessentials.orange_poker_chip.value": "§7Value: §f§o$10",
+  "item.ninetofiveessentials.yellow_poker_chip": "Poker Chip",
+  "tooltip.ninetofiveessentials.yellow_poker_chip": "§7Yellow ⏵ §o$20",
+  "tooltip.ninetofiveessentials.yellow_poker_chip.value": "§7Value: §f§o$20",
+  "item.ninetofiveessentials.green_poker_chip": "Poker Chip",
+  "tooltip.ninetofiveessentials.green_poker_chip": "§7Green ⏵ §o$25",
+  "tooltip.ninetofiveessentials.green_poker_chip.value": "§7Value: §f§o$25",
+  "item.ninetofiveessentials.black_poker_chip": "Poker Chip",
+  "tooltip.ninetofiveessentials.black_poker_chip": "§7Black ⏵ §o$100",
+  "tooltip.ninetofiveessentials.black_poker_chip.value": "§7Value: §f§o$100",
+  "item.ninetofiveessentials.purple_poker_chip": "Poker Chip",
+  "tooltip.ninetofiveessentials.purple_poker_chip": "§7Purple ⏵ §o$500",
+  "tooltip.ninetofiveessentials.purple_poker_chip.value": "§7Value: §f§o$500",
+  "item.ninetofiveessentials.maroon_poker_chip": "Poker Chip",
+  "tooltip.ninetofiveessentials.maroon_poker_chip": "§7Maroon ⏵ §o$1,000",
+  "tooltip.ninetofiveessentials.maroon_poker_chip.value": "§7Value: §f§o$1,000",
 
+  "item.ninetofiveessentials.dart_board": "Dart Board",
 
+  "item.ninetofiveessentials.dark_is_the_night_music_disc": "Music Disc",
+  "item.ninetofiveessentials.dark_is_the_night.desc": "Nikita Bogoslovsky - Dark is the Night",
+  "item.ninetofiveessentials.can_can_music_disc": "Music Disc",
+  "item.ninetofiveessentials.can_can.desc": "Jacques Offenbach - Can Can",
 
   "effect.ninetofiveessentials.serenity": "Serenity",
   "effect.ninetofiveessentials.ailment": "Ailment",
@@ -67,6 +99,6 @@
   "advancement.ninetofiveessentials.sonic.description": "Caffeine Rush!",
   "advancement.ninetofiveessentials.five_hundred_cigarettes": "500 CIGARETTES",
   "advancement.ninetofiveessentials.five_hundred_cigarettes.description": "Obtain a block of cigarettes.",
-  "advancement.ninetofiveessentials.lung_cancer": "Lung Cancer",
-  "advancement.ninetofiveessentials.lung_cancer.description": "Smoke enough cigarettes to get max level ailment."
+  "advancement.ninetofiveessentials.lung_cancer": "Actual 500 Cigarettes",
+  "advancement.ninetofiveessentials.lung_cancer.description": "Smoke enough cigarettes to kill a horse."
 }

@@ -7,7 +7,6 @@ import net.jolene.ninetofiveessentials.block.ModBlocks;
 import net.jolene.ninetofiveessentials.particle.Coin;
 import net.jolene.ninetofiveessentials.particle.ModParticles;
 import net.minecraft.client.render.BlockRenderLayer;
-import net.minecraft.util.Identifier;
 
 public class NineToFiveEssentialsClient implements ClientModInitializer {
 

@@ -43,6 +43,9 @@ public class ModBlocks {
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
+    public static final Block MINTING_TABLE = registerBlock("minting_table",
+            AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE));
+
     public static final Block COIN = registerBlockWithItem("coin",
             settings -> new CoinLayerBlock(
                     settings
@@ -62,6 +65,14 @@ public class ModBlocks {
             ));
     public static final Block BOWLING_PIN = registerBlockWithItem("bowling_pin",
             settings -> new BowlingPinBlock(
+                    settings
+                            .strength(0.0f)  // Instantly breakable
+                            .sounds(BlockSoundGroup.BAMBOO)
+                            .nonOpaque()
+
+            ));
+    public static final Block DART_BOARD = registerBlockWithItem("dart_board",
+            settings -> new DartBoardBlock(
                     settings
                             .strength(0.0f)  // Instantly breakable
                             .sounds(BlockSoundGroup.BAMBOO)
@@ -120,6 +131,8 @@ public class ModBlocks {
             entries.add(ModBlocks.SLOT_MACHINE);
             entries.add(ModBlocks.DICE);
             entries.add(ModBlocks.BOWLING_PIN);
+            entries.add(ModBlocks.DART_BOARD);
+            entries.add(ModBlocks.MINTING_TABLE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.TAR_BRICKS);

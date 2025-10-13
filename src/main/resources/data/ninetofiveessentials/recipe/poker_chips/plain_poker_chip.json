@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": "minecraft:clay_ball"
+    },
+    "result": {
+        "id": "ninetofiveessentials:plain_poker_chip",
+        "count": 3
+    }
+}

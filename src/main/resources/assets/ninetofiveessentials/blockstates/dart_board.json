@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ninetofiveessentials:block/dart_board" },
+    "facing=south": { "model": "ninetofiveessentials:block/dart_board", "y": 180 },
+    "facing=west": { "model": "ninetofiveessentials:block/dart_board", "y": 270 },
+    "facing=east": { "model": "ninetofiveessentials:block/dart_board", "y": 90 }
+  }
+}

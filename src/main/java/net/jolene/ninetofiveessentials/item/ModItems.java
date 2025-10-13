@@ -60,6 +60,25 @@ public class ModItems {
     public static final Item MINTED_COIN = registerItem("minted_coin", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"minted_coin")))));
 
+    public static final Item PLAIN_POKER_CHIP = registerItem("plain_poker_chip", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"plain_poker_chip")))));
+    public static final Item WHITE_POKER_CHIP = registerItem("white_poker_chip", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"white_poker_chip")))));
+    public static final Item RED_POKER_CHIP = registerItem("red_poker_chip", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"red_poker_chip")))));
+    public static final Item ORANGE_POKER_CHIP = registerItem("orange_poker_chip", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"orange_poker_chip")))));
+    public static final Item YELLOW_POKER_CHIP = registerItem("yellow_poker_chip", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"yellow_poker_chip")))));
+    public static final Item GREEN_POKER_CHIP = registerItem("green_poker_chip", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"green_poker_chip")))));
+    public static final Item BLACK_POKER_CHIP = registerItem("black_poker_chip", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"black_poker_chip")))));
+    public static final Item PURPLE_POKER_CHIP = registerItem("purple_poker_chip", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"purple_poker_chip")))));
+    public static final Item MAROON_POKER_CHIP = registerItem("maroon_poker_chip", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"maroon_poker_chip")))));
+
     // DON'T DELETE
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID, name), item);
@@ -79,6 +98,15 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(BERET);
             entries.add(MINTED_COIN);
+            entries.add(WHITE_POKER_CHIP);
+            entries.add(RED_POKER_CHIP);
+            entries.add(ORANGE_POKER_CHIP);
+            entries.add(YELLOW_POKER_CHIP);
+            entries.add(GREEN_POKER_CHIP);
+            entries.add(BLACK_POKER_CHIP);
+            entries.add(PURPLE_POKER_CHIP);
+            entries.add(MAROON_POKER_CHIP);
+
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(TAR_GLOB);
@@ -86,6 +114,7 @@ public class ModItems {
             entries.add(COFFEE_BEANS);
             entries.add(TOBACCO_LEAVES);
             entries.add(DRIED_TOBACCO);
+            entries.add(PLAIN_POKER_CHIP);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(NICOTIANA_SEEDS);

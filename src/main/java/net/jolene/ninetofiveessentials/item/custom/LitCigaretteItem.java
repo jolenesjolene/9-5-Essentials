@@ -47,13 +47,6 @@ public class LitCigaretteItem extends Item {
                     false,
                     true
             ));
-            user.addStatusEffect(new StatusEffectInstance(
-                    ModEffects.SERENTIY,
-                    200,
-                    0,
-                    false,
-                    true
-            ));
 
             // Cooldown
             user.getItemCooldownManager().set(getDefaultStack(), 60);

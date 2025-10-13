@@ -8,6 +8,12 @@ import net.minecraft.text.Text;
 public class ModItemTooltips {
     public static void register() {
         ItemTooltipCallback.EVENT.register((itemStack, tooltipContext, tooltipType, list) -> {
+            if (itemStack.isOf(ModItems.CIGARETTE)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.cigarette"));
+            }
+            if (itemStack.isOf(ModItems.LIT_CIGARETTE)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.lit_cigarette"));
+            }
             if (itemStack.isOf(ModBlocks.FIVE_HUNDRED_CIGARETTES.asItem())) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.five_hundred_cigarettes"));
             }
@@ -22,6 +28,30 @@ public class ModItemTooltips {
             }
             if (itemStack.isOf(ModItems.MINTED_COIN)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.minted_coin"));
+            }
+            if (itemStack.isOf(ModItems.WHITE_POKER_CHIP)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.white_poker_chip"));
+            }
+            if (itemStack.isOf(ModItems.RED_POKER_CHIP)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.red_poker_chip"));
+            }
+            if (itemStack.isOf(ModItems.ORANGE_POKER_CHIP)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.orange_poker_chip"));
+            }
+            if (itemStack.isOf(ModItems.YELLOW_POKER_CHIP)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.yellow_poker_chip"));
+            }
+            if (itemStack.isOf(ModItems.GREEN_POKER_CHIP)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.green_poker_chip"));
+            }
+            if (itemStack.isOf(ModItems.BLACK_POKER_CHIP)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.black_poker_chip"));
+            }
+            if (itemStack.isOf(ModItems.PURPLE_POKER_CHIP)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.purple_poker_chip"));
+            }
+            if (itemStack.isOf(ModItems.MAROON_POKER_CHIP)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.maroon_poker_chip"));
             }
         });
     }

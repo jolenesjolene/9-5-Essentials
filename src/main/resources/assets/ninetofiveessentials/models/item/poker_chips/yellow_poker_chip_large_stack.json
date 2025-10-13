@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ninetofiveessentials:item/poker_chips/yellow_poker_chip_large_stack"
+  }
+}

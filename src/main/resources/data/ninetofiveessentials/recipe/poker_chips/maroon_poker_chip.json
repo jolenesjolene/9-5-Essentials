@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:magenta_dye",
+        "#ninetofiveessentials:poker_chip"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:maroon_poker_chip",
+        "count": 1
+    }
+}

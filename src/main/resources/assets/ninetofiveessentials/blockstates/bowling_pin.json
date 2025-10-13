@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "ninetofiveessentials:block/bowling_pin"
-    }
+    "pin_count=1": { "model": "modid:block/bowling_pin_1" },
+    "pin_count=2": { "model": "modid:block/bowling_pin_2" },
+    "pin_count=3": { "model": "modid:block/bowling_pin_3" },
+    "pin_count=4": { "model": "modid:block/bowling_pin_4" }
   }
 }

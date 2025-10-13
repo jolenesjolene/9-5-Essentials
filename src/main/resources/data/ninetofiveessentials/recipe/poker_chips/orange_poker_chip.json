@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:orange_dye",
+        "#ninetofiveessentials:poker_chip"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:orange_poker_chip",
+        "count": 1
+    }
+}

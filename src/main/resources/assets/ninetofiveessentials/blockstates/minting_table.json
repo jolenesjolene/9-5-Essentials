@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ninetofiveessentials:block/minting_table"
+    }
+  }
+}

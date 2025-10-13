@@ -54,11 +54,6 @@ public class DiceBlock extends FallingBlock {
             world.setBlockState(pos, newState, 3);
             world.updateNeighbors(pos, this);
 
-            int roll = getRollFromFacing(randomFacing);
-            Text message = Text.literal("Rolled a " + roll + "!");
-            serverWorld.getPlayers(p -> p.squaredDistanceTo(pos.toCenterPos()) <= 16 * 16)
-                    .forEach(p -> p.sendMessage(message));
-
 
             serverWorld.spawnParticles(
                     new BlockStateParticleEffect(ParticleTypes.BLOCK, newState),
