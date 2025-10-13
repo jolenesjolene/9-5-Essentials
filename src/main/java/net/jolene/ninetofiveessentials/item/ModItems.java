@@ -34,8 +34,6 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"vodka"))).maxCount(1)));
     public static final Item BEER = registerItem("beer", new Item(new Item.Settings().food(ModFoodComponents.BEER)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"beer"))).maxCount(3)));
-    public static final Item CRUMPLED_CAN = registerItem("crumpled_can", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"crumpled_can"))).maxCount(16)));
 
     public static final Item NICOTIANA_SEEDS = registerItem("nicotiana_seeds", new BlockItem(ModBlocks.NICOTIANA_PLANT, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"nicotiana_seeds")))));
@@ -77,7 +75,6 @@ public class ModItems {
             entries.add(BAGUETTE);
             entries.add(VODKA);
             entries.add(BEER);
-            entries.add(CRUMPLED_CAN);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(BERET);

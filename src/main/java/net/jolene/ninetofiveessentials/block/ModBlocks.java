@@ -60,11 +60,11 @@ public class ModBlocks {
                             .sounds(BlockSoundGroup.BONE)
                             .nonOpaque()
             ));
-    public static final Block CAN = registerBlockWithItem("can",
-            settings -> new CanBlock(
+    public static final Block BOWLING_PIN = registerBlockWithItem("bowling_pin",
+            settings -> new BowlingPinBlock(
                     settings
                             .strength(0.0f)  // Instantly breakable
-                            .sounds(BlockSoundGroup.LANTERN)
+                            .sounds(BlockSoundGroup.BAMBOO)
                             .nonOpaque()
 
             ));
@@ -119,6 +119,7 @@ public class ModBlocks {
             entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
             entries.add(ModBlocks.SLOT_MACHINE);
             entries.add(ModBlocks.DICE);
+            entries.add(ModBlocks.BOWLING_PIN);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.TAR_BRICKS);

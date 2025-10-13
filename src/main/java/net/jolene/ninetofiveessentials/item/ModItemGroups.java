@@ -45,8 +45,6 @@ public class ModItemGroups {
                             entries.add(ModItems.BAGUETTE);
                             entries.add(ModItems.VODKA);
                             entries.add(ModItems.BEER);
-                            entries.add(ModBlocks.CAN);
-                            entries.add(ModItems.CRUMPLED_CAN);
                             entries.add(ModBlocks.SLOT_MACHINE);
                             entries.add(ModBlocks.DICE);
                             entries.add(ModBlocks.COIN);
@@ -54,6 +52,7 @@ public class ModItemGroups {
                             entries.add(ModBlocks.BLOCK_OF_COINS);
                             entries.add(ModItems.DARK_IS_THE_NIGHT_MUSIC_DISC);
                             entries.add(ModItems.CAN_CAN_MUSIC_DISC);
+                            entries.add(ModBlocks.BOWLING_PIN);
 
                         }).build());
 

@@ -25,8 +25,6 @@
   "item.minecraft.tipped_arrow.effect.coffee": "Coffee Tipped Arrow",
 
   "item.ninetofiveessentials.vodka": "Vodka",
-  "item.ninetofiveessentials.can": "Can",
-  "item.ninetofiveessentials.crumpled_can": "Crumpled Can",
   "item.ninetofiveessentials.beer": "Can O' Beer",
 
   "item.ninetofiveessentials.dark_is_the_night_music_disc": "Music Disc",
@@ -60,6 +58,7 @@
   "item.ninetofiveessentials.tar_bricks": "Tar Bricks",
   "item.ninetofiveessentials.tar_brick_stairs": "Tar Brick Stairs",
   "item.ninetofiveessentials.tar_brick_slab": "Tar Brick Slab",
+  "item.ninetofiveessentials.bowling_pin": "Bowling Pin",
 
   "advancement.ninetofiveessentials.root": "9-5 Essentials",
   "advancement.ninetofiveessentials.root.description": "Everything you need!",
