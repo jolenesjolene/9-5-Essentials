@@ -21,9 +21,9 @@ public class ModSounds {
 public static final RegistryKey<JukeboxSong> DARK_IS_THE_NIGHT_KEY =
         RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(NineToFiveEssentials.MOD_ID, "dark_is_the_night"));
 
-    public static final SoundEvent CAN_CAN = registerSoundEvent("can_can");
-    public static final RegistryKey<JukeboxSong> CAN_CAN_KEY =
-            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(NineToFiveEssentials.MOD_ID, "can_can"));
+    public static final SoundEvent FUNKY_CIGARETTE = registerSoundEvent("funky_cigarette");
+    public static final RegistryKey<JukeboxSong> FUNKY_CIGARETTE_KEY =
+            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(NineToFiveEssentials.MOD_ID, "funky_cigarette"));
 
 
     private static SoundEvent registerSoundEvent(String name) {

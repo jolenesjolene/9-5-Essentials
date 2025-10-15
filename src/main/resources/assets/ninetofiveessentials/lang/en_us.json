@@ -1,5 +1,6 @@
 {
   "itemgroup.ninetofiveessentials.ninetofiveessentials": "9-5 Essentials",
+  "itemgroup.ninetofiveessentials.ninetofiveessentials_wip": "9-5 WIP",
 
   "item.ninetofiveessentials.cigarette": "Cigarette",
   "tooltip.ninetofiveessentials.cigarette": "§7Unlit",
@@ -76,8 +77,10 @@
 
   "item.ninetofiveessentials.dark_is_the_night_music_disc": "Music Disc",
   "item.ninetofiveessentials.dark_is_the_night.desc": "Nikita Bogoslovsky - Dark is the Night",
-  "item.ninetofiveessentials.can_can_music_disc": "Music Disc",
-  "item.ninetofiveessentials.can_can.desc": "Jacques Offenbach - Can Can",
+  "sounds.ninetofiveessentials.dark_is_the_night": "Depressing European music plays",
+  "item.ninetofiveessentials.funky_cigarette_music_disc": "Music Disc",
+  "item.ninetofiveessentials.funky_cigarette.desc": "Paolo Nutini - Funky Cigarette",
+  "sounds.ninetofiveessentials.funky_cigarette": "Paolo my beloved <3",
 
   "effect.ninetofiveessentials.serenity": "Serenity",
   "effect.ninetofiveessentials.ailment": "Ailment",

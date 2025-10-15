@@ -38,11 +38,11 @@
       }
     ]
   },
-  "can_can": {
-    "subtitle": "sounds.ninetofiveessentials.can_can",
+  "funky_cigarette": {
+    "subtitle": "sounds.ninetofiveessentials.funky_cigarette",
     "sounds": [
       {
-        "name": "ninetofiveessentials:can_can",
+        "name": "ninetofiveessentials:funky_cigarette",
         "stream": true
       }
     ]

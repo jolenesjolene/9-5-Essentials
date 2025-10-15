@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.ninetofiveessentials.funky_cigarette.desc"
+  },
+  "length_in_seconds": 105.0,
+  "sound_event": "ninetofiveessentials:funky_cigarette"
+}

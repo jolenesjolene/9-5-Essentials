@@ -49,9 +49,9 @@ public class ModItems {
     public static final Item DARK_IS_THE_NIGHT_MUSIC_DISC = registerItem("dark_is_the_night_music_disc",
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.DARK_IS_THE_NIGHT_KEY)
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"dark_is_the_night_music_disc"))).maxCount(1)));
-    public static final Item CAN_CAN_MUSIC_DISC = registerItem("can_can_music_disc",
-            new Item(new Item.Settings().jukeboxPlayable(ModSounds.CAN_CAN_KEY)
-                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"can_can_music_disc"))).maxCount(1)));
+    public static final Item FUNKY_CIGARETTE_MUSIC_DISC = registerItem("funky_cigarette_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.FUNKY_CIGARETTE_KEY)
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"funky_cigarette_music_disc"))).maxCount(1)));
     public static final Item BERET = registerItem("beret", new BeretItem(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"beret"))).maxCount(1)));
 
@@ -118,7 +118,7 @@ public class ModItems {
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(DARK_IS_THE_NIGHT_MUSIC_DISC);
-            entries.add(CAN_CAN_MUSIC_DISC);
+            entries.add(FUNKY_CIGARETTE_MUSIC_DISC);
         });
     }
 }
