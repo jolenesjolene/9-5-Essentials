@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:paper",
+        "ninetofiveessentials:dried_hemp"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:funky_cigarette",
+        "count": 1
+    }
+}

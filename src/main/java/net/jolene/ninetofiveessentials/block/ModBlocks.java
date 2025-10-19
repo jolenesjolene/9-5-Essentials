@@ -37,8 +37,8 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(2f).requiresTool()));
 
 
-    public static final Block NICOTIANA_PLANT = registerBlockWithoutBlockItem("nicotiana_plant",
-            properties -> new NicotianaPlantBlock(properties.noCollision()
+    public static final Block HEMP_PLANT = registerBlockWithoutBlockItem("hemp",
+            properties -> new HempPlantBlock(properties.noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 

@@ -23,13 +23,15 @@ public class ModItemGroups {
                             entries.add(ModItems.CIGARETTE);
                             entries.add(ModItems.CIGARETTE_BUTT);
                             entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
-                            entries.add(ModItems.TOBACCO_LEAVES);
-                            entries.add(ModItems.NICOTIANA_SEEDS);
                             entries.add(ModItems.TAR_GLOB);
                             entries.add(ModItems.TAR_BRICK);
                             entries.add(ModBlocks.TAR_BRICKS);
                             entries.add(ModBlocks.TAR_BRICK_STAIRS);
                             entries.add(ModBlocks.TAR_BRICK_SLAB);
+                            entries.add(ModItems.FUNKY_CIGARETTE);
+                            entries.add(ModItems.HEMP_SEEDS);
+                            entries.add(ModItems.HEMP_LEAVES);
+                            entries.add(ModItems.DRIED_HEMP);
                             ItemStack coffeePotion = PotionContentsComponent.createStack(Items.POTION, ModPotions.COFFEE);
                             entries.add(coffeePotion);
                             ItemStack splashCoffeePotion = PotionContentsComponent.createStack(Items.SPLASH_POTION, ModPotions.COFFEE);

@@ -195,7 +195,7 @@ public class SlotMachineBlock extends Block {
 
                     world.setBlockState(pos, resultState, Block.NOTIFY_ALL);
                     spawnNoteParticle(world, pos);
-                    spawnCoinParticles(world, pos); // ✅ NEW: spawn coins
+                    spawnCoinParticles(world, pos);
                     playSound(world, pos, ModSounds.RESULT);
                 }
             }
@@ -227,7 +227,6 @@ public class SlotMachineBlock extends Block {
         world.spawnParticles(ParticleTypes.NOTE, x, y, z, 1, 0, 0, 0, 0);
     }
 
-    // ✅ NEW METHOD: spawn 10 COIN particles
     private void spawnCoinParticles(ServerWorld world, BlockPos pos) {
         double x = pos.getX() + 0.5;
         double y = pos.getY() + 0.5;

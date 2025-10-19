@@ -40,8 +40,8 @@ public class NineToFiveEssentials implements ModInitializer {
 			builder.registerPotionRecipe(Potions.WATER, ModItems.COFFEE_BEANS, ModPotions.COFFEE);
 		});
 		CompostingChanceRegistry.INSTANCE.add(ModItems.COFFEE_CHERRIES, 0.5f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.TOBACCO_LEAVES, 0.5f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.NICOTIANA_SEEDS, 0.25f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.HEMP_LEAVES, 0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.HEMP_SEEDS, 0.25f);
 		LOGGER.info("Very Dirty!");
 	}
 }

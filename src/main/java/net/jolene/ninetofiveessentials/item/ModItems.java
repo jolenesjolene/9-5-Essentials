@@ -3,9 +3,7 @@ package net.jolene.ninetofiveessentials.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jolene.ninetofiveessentials.NineToFiveEssentials;
 import net.jolene.ninetofiveessentials.block.ModBlocks;
-import net.jolene.ninetofiveessentials.item.custom.BeretItem;
-import net.jolene.ninetofiveessentials.item.custom.CigaretteItem;
-import net.jolene.ninetofiveessentials.item.custom.LitCigaretteItem;
+import net.jolene.ninetofiveessentials.item.custom.*;
 import net.jolene.ninetofiveessentials.sound.ModSounds;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -21,7 +19,14 @@ public class ModItems {
     public static final Item CIGARETTE = registerItem("cigarette", new CigaretteItem(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"cigarette"))).maxCount(1)));
     public static final Item LIT_CIGARETTE = registerItem("lit_cigarette", new LitCigaretteItem(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"lit_cigarette"))).maxCount(1).maxDamage(10)));
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"lit_cigarette"))).maxCount(1).maxDamage(6)));
+
+    public static final Item FUNKY_CIGARETTE = registerItem("funky_cigarette", new FunkyCigaretteItem(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"funky_cigarette"))).maxCount(1)));
+    public static final Item LIT_FUNKY_CIGARETTE = registerItem("lit_funky_cigarette", new LitFunkyCigaretteItem(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"lit_funky_cigarette"))).maxCount(1).maxDamage(6)));
+
+
     public static final Item CIGARETTE_BUTT = registerItem("cigarette_butt", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"cigarette_butt"))).maxCount(16)));
     public static final Item TAR_GLOB = registerItem("tar_glob", new Item(new Item.Settings()
@@ -35,11 +40,14 @@ public class ModItems {
     public static final Item BEER = registerItem("beer", new Item(new Item.Settings().food(ModFoodComponents.BEER)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"beer"))).maxCount(3)));
 
-    public static final Item NICOTIANA_SEEDS = registerItem("nicotiana_seeds", new BlockItem(ModBlocks.NICOTIANA_PLANT, new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"nicotiana_seeds")))));
+    public static final Item HEMP_SEEDS = registerItem("hemp_seeds", new BlockItem(ModBlocks.HEMP_PLANT, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"hemp_seeds")))));
 
-    public static final Item TOBACCO_LEAVES = registerItem("tobacco_leaves", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"tobacco_leaves")))));
+    public static final Item HEMP_LEAVES = registerItem("hemp_leaves", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"hemp_leaves")))));
+
+    public static final Item DRIED_HEMP = registerItem("dried_hemp", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"dried_hemp")))));
 
     public static final Item COFFEE_CHERRIES = registerItem("coffee_cherries", new Item(new Item.Settings().food(ModFoodComponents.COFFEE_CHERRIES)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_cherries")))));
@@ -110,11 +118,12 @@ public class ModItems {
             entries.add(TAR_GLOB);
             entries.add(TAR_BRICK);
             entries.add(COFFEE_BEANS);
-            entries.add(TOBACCO_LEAVES);
+            entries.add(HEMP_LEAVES);
+            entries.add(DRIED_HEMP);
             entries.add(PLAIN_POKER_CHIP);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
-            entries.add(NICOTIANA_SEEDS);
+            entries.add(HEMP_SEEDS);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(DARK_IS_THE_NIGHT_MUSIC_DISC);

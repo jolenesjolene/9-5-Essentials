@@ -18,7 +18,7 @@ public class ModLootTableModifiers {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.25f))
-                        .with(ItemEntry.builder(ModItems.NICOTIANA_SEEDS))
+                        .with(ItemEntry.builder(ModItems.HEMP_SEEDS))
                         .apply(SetCountLootFunction.builder(
                                 UniformLootNumberProvider.create(1.0f, 3.0f)
                         ));
@@ -33,7 +33,7 @@ public class ModLootTableModifiers {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.25f))
-                        .with(ItemEntry.builder(ModItems.NICOTIANA_SEEDS))
+                        .with(ItemEntry.builder(ModItems.HEMP_SEEDS))
                         .apply(SetCountLootFunction.builder(
                                 UniformLootNumberProvider.create(1.0f, 3.0f)
                         ));

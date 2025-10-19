@@ -1,6 +1,0 @@
-{
-	"parent": "minecraft:block/cross",
-	"textures": {
-		"cross": "ninetofiveessentials:block/nicotiana_top_stage0"
-	}
-}

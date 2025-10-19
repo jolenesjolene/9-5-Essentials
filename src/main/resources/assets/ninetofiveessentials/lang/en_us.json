@@ -4,21 +4,27 @@
 
   "item.ninetofiveessentials.cigarette": "Cigarette",
   "tooltip.ninetofiveessentials.cigarette": "§7Unlit",
-  "item.ninetofiveessentials.lit_cigarette": "Lit Cigarette",
+  "item.ninetofiveessentials.lit_cigarette": "Cigarette",
   "tooltip.ninetofiveessentials.lit_cigarette": "§9Ailment (10:00)",
   "item.ninetofiveessentials.cigarette_butt": "Cigarette Butt",
+
+  "item.ninetofiveessentials.funky_cigarette": "Funky Cigarette",
+  "tooltip.ninetofiveessentials.funky_cigarette": "§7Unlit",
+  "item.ninetofiveessentials.lit_funky_cigarette": "Funky Cigarette",
+  "tooltip.ninetofiveessentials.lit_funky_cigarette": "§9Serenity (00:30)",
 
   "item.minecraft.potion.effect.coffee": "Coffee",
   "item.minecraft.splash_potion.effect.coffee": "Throwable Coffee",
   "item.minecraft.lingering_potion.effect.coffee": "Lingering Coffee",
-  "item.minecraft.tipped_arrow.effect.coffee": "Coffee Tipped Arrow",
+  "item.minecraft.tipped_arrow.effect.coffee": "Coffee Dipped Arrow",
 
 
   "item.ninetofiveessentials.vodka": "Vodka",
   "item.ninetofiveessentials.beer": "Can O' Beer",
 
-  "item.ninetofiveessentials.nicotiana_seeds": "Nicotiana Seeds",
-  "item.ninetofiveessentials.tobacco_leaves": "Tobacco Leaves",
+  "item.ninetofiveessentials.hemp_seeds": "Hemp Seeds",
+  "item.ninetofiveessentials.hemp_leaves": "Hemp Leaves",
+  "item.ninetofiveessentials.dried_hemp": "Dried Hemp",
   "item.ninetofiveessentials.coffee_cherries": "Coffee Cherries",
   "item.ninetofiveessentials.coffee_beans": "Coffee Beans",
 
@@ -82,8 +88,15 @@
   "item.ninetofiveessentials.funky_cigarette.desc": "Paolo Nutini - Funky Cigarette",
   "sounds.ninetofiveessentials.funky_cigarette": "Paolo my beloved <3",
 
-  "effect.ninetofiveessentials.serenity": "Serenity",
+  "sounds.ninetofiveessentials.puff": "Cigarette puff",
+  "sounds.ninetofiveessentials.fizzle": "Cigarette fizzles",
+  "sounds.ninetofiveessentials.wheel": "Slot machine blings",
+  "sounds.ninetofiveessentials.result": "Slot machine blings",
+
   "effect.ninetofiveessentials.ailment": "Ailment",
+  "effect.ninetofiveessentials.serenity": "Serenity",
+  "effect.ninetofiveessentials.munchies": "Munchies",
+  "tooltip.ninetofiveessentials.sweet_treat": "§7Sweet Treat",
   "effect.ninetofiveessentials.overcaffeinated": "Overcaffeinated",
   "effect.ninetofiveessentials.jitters": "Jitters",
 

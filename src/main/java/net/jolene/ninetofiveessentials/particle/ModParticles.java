@@ -8,6 +8,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModParticles {
+    public static final SimpleParticleType PUFF =
+            registerParticle("puff", FabricParticleTypes.simple());
     public static final SimpleParticleType COIN =
             registerParticle("coin", FabricParticleTypes.simple());
 

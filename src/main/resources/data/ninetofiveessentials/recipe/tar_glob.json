@@ -1,9 +1,13 @@
 {
-    "type": "minecraft:campfire_cooking",
-    "ingredient": "ninetofiveessentials:tobacco_leaves",
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "#minecraft:leaves",
+        "minecraft:gunpowder",
+        "minecraft:gunpowder",
+        "#minecraft:leaves"
+    ],
     "result": {
-        "id": "ninetofiveessentials:tar_glob"
-    },
-    "experience": 0.1,
-    "cookingtime": 600
+        "id": "ninetofiveessentials:tar_glob",
+        "count": 1
+    }
 }
