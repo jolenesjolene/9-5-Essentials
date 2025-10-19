@@ -49,10 +49,44 @@ public class ModItems {
     public static final Item DRIED_HEMP = registerItem("dried_hemp", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"dried_hemp")))));
 
-    public static final Item COFFEE_CHERRIES = registerItem("coffee_cherries", new Item(new Item.Settings().food(ModFoodComponents.COFFEE_CHERRIES)
+    public static final Item CROISSANT = registerItem("croissant", new Item(new Item.Settings().food(ModFoodComponents.CROISSANT)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"croissant")))));
+    public static final Item BUTTER = registerItem("butter", new ButterItem(new Item.Settings().food(ModFoodComponents.BUTTER)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"butter")))));
+    public static final Item CHOCOLATE = registerItem("chocolate", new Item(new Item.Settings().food(ModFoodComponents.CHOCOLATE)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"chocolate")))));
+    public static final Item BROWNIE = registerItem("brownie", new Item(new Item.Settings().food(ModFoodComponents.BROWNIE)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"brownie")))));
+    public static final Item FUNKY_BROWNIE = registerItem("funky_brownie", new Item(new Item.Settings().food(ModFoodComponents.FUNKY_BROWNIE)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"funky_brownie")))));
+    public static final Item CHOCOLATE_FISH = registerItem("chocolate_fish", new Item(new Item.Settings().food(ModFoodComponents.CHOCOLATE_FISH)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"chocolate_fish")))));
+
+    public static final Item LIQUORICE_SEEDS = registerItem("liquorice_seeds", new BlockItem(ModBlocks.LIQUORICE_ROOT, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"liquorice_seeds")))));
+    public static final Item LIQUORICE_ROOT = registerItem("liquorice_root", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"liquorice_root")))));
+    public static final Item LIQUORICE_SWEET = registerItem("liquorice_sweet", new Item(new Item.Settings().food(ModFoodComponents.LIQUORICE_SWEET)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"liquorice_sweet")))));
+
+
+
+
+
+
+
+
+
+    public static final Item COFFEE_CHERRIES = registerItem("coffee_cherries", new BlockItem(ModBlocks.COFFEE_BUSH, new Item.Settings().food(ModFoodComponents.COFFEE_CHERRIES)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_cherries")))));
     public static final Item COFFEE_BEANS = registerItem("coffee_beans", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_beans")))));
+    public static final Item COFFEE_MEAL = registerItem("coffee_meal", new CoffeeMealItem(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_meal")))));
+    public static final Item TIRAMISU = registerItem("tiramisu", new Item(new Item.Settings().food(ModFoodComponents.TIRAMISU)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"tiramisu")))));
+    public static final Item COFFEE_GUM = registerItem("coffee_gum", new CoffeeGumItem(new Item.Settings().food(ModFoodComponents.COFFEE_GUM)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_gum")))));
 
     public static final Item DARK_IS_THE_NIGHT_MUSIC_DISC = registerItem("dark_is_the_night_music_disc",
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.DARK_IS_THE_NIGHT_KEY)
@@ -97,12 +131,22 @@ public class ModItems {
             entries.add(CIGARETTE);
             entries.add(CIGARETTE_BUTT);
             entries.add(COFFEE_CHERRIES);
+            entries.add(TIRAMISU);
+            entries.add(COFFEE_GUM);
             entries.add(BAGUETTE);
             entries.add(VODKA);
             entries.add(BEER);
+            entries.add(CROISSANT);
+            entries.add(BUTTER);
+            entries.add(CHOCOLATE);
+            entries.add(BROWNIE);
+            entries.add(FUNKY_BROWNIE);
+            entries.add(CHOCOLATE_FISH);;
+            entries.add(LIQUORICE_SWEET);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(BERET);
+            entries.add(COFFEE_MEAL);
             entries.add(MINTED_COIN);
             entries.add(WHITE_POKER_CHIP);
             entries.add(RED_POKER_CHIP);
@@ -112,7 +156,6 @@ public class ModItems {
             entries.add(BLACK_POKER_CHIP);
             entries.add(PURPLE_POKER_CHIP);
             entries.add(MAROON_POKER_CHIP);
-
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(TAR_GLOB);
@@ -120,10 +163,12 @@ public class ModItems {
             entries.add(COFFEE_BEANS);
             entries.add(HEMP_LEAVES);
             entries.add(DRIED_HEMP);
+            entries.add(LIQUORICE_ROOT);
             entries.add(PLAIN_POKER_CHIP);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(HEMP_SEEDS);
+            entries.add(LIQUORICE_SEEDS);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(DARK_IS_THE_NIGHT_MUSIC_DISC);

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:sugar",
+        "ninetofiveessentials:liquorice_root",
+        "minecraft:honeycomb"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:liquorice_sweet",
+        "count": 1
+    }
+}

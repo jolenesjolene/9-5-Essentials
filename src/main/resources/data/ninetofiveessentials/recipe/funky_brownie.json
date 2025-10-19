@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "ninetofiveessentials:dried_hemp",
+        "ninetofiveessentials:dried_hemp",
+        "ninetofiveessentials:brownie"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:funky_brownie",
+        "count": 1
+    }
+}

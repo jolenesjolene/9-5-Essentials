@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:cocoa_beans",
+        "minecraft:milk_bucket",
+        "minecraft:sugar",
+        "minecraft:cocoa_beans"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:chocolate",
+        "count": 1
+    }
+}

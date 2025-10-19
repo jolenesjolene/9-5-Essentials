@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "ninetofiveessentials:coffee_beans",
+        "minecraft:bone_meal"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:coffee_meal",
+        "count": 1
+    }
+}

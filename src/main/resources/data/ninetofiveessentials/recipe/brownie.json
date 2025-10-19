@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "ninetofiveessentials:chocolate",
+        "minecraft:sugar",
+        "#minecraft:eggs",
+        "ninetofiveessentials:chocolate"
+    ],
+    "result": {
+        "id": "ninetofiveessentials:brownie",
+        "count": 1
+    }
+}

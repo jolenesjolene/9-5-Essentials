@@ -1,5 +1,6 @@
 package net.jolene.ninetofiveessentials.block;
 
+import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jolene.ninetofiveessentials.NineToFiveEssentials;
 import net.jolene.ninetofiveessentials.block.custom.*;
@@ -18,6 +19,7 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class ModBlocks {
+
 
     public static final Block BRITNEY = registerBlock("britney",
             AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
@@ -41,6 +43,15 @@ public class ModBlocks {
             properties -> new HempPlantBlock(properties.noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block COFFEE_BUSH = registerBlockWithoutBlockItem("coffee",
+            properties -> new CoffeeBushBlock(properties.noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block LIQUORICE_ROOT = registerBlockWithoutBlockItem("liquorice",
+            properties -> new LiquoriceRootBlock(properties.noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
 
     public static final Block MINTING_TABLE = registerBlock("minting_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE));
