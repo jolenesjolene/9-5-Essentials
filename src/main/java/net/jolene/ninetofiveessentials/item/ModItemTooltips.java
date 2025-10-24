@@ -21,9 +21,6 @@ public class ModItemTooltips {
             if (itemStack.isOf(ModItems.LIT_FUNKY_CIGARETTE)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.lit_funky_cigarette"));
             }
-            if (itemStack.isOf(ModItems.TIRAMISU)) {
-                list.add(Text.translatable("tooltip.ninetofiveessentials.sweet_treat"));
-            }
             if (itemStack.isOf(ModItems.COFFEE_GUM)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.coffee_gum"));
             }
@@ -36,9 +33,6 @@ public class ModItemTooltips {
             if (itemStack.isOf(Items.PUMPKIN_PIE)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.sweet_treat"));
             }
-            if (itemStack.isOf(ModItems.CROISSANT)) {
-                list.add(Text.translatable("tooltip.ninetofiveessentials.sweet_treat"));
-            }
             if (itemStack.isOf(ModItems.CHOCOLATE)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.sweet_treat"));
             }
@@ -49,9 +43,6 @@ public class ModItemTooltips {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.funky_brownie"));
             }
             if (itemStack.isOf(ModItems.CHOCOLATE_FISH)) {
-                list.add(Text.translatable("tooltip.ninetofiveessentials.sweet_treat"));
-            }
-            if (itemStack.isOf(ModItems.LIQUORICE_SWEET)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.sweet_treat"));
             }
             if (itemStack.isOf(ModBlocks.FIVE_HUNDRED_CIGARETTES.asItem())) {

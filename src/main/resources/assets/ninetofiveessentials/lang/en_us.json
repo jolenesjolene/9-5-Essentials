@@ -18,8 +18,6 @@
   "item.minecraft.splash_potion.effect.coffee": "Throwable Coffee",
   "item.minecraft.lingering_potion.effect.coffee": "Lingering Coffee",
   "item.minecraft.tipped_arrow.effect.coffee": "Coffee Dipped Arrow",
-  "item.ninetofiveessentials.coffee_meal": "Coffee Meal",
-  "item.ninetofiveessentials.tiramisu": "Tiramisu",
   "item.ninetofiveessentials.coffee_gum": "Coffee Gum",
   "tooltip.ninetofiveessentials.coffee_gum": "§7The, favorite treat of a certain temperamental dog...",
 
@@ -33,17 +31,11 @@
   "item.ninetofiveessentials.coffee_cherries": "Coffee Cherries",
   "item.ninetofiveessentials.coffee_beans": "Coffee Beans",
 
-  "item.ninetofiveessentials.croissant": "Croissant",
-  "item.ninetofiveessentials.butter": "Butter",
   "item.ninetofiveessentials.chocolate": "Chocolate",
-  "item.ninetofiveessentials.chocolate_bucket": "Chocolate Bucket",
   "item.ninetofiveessentials.brownie": "Brownie",
   "item.ninetofiveessentials.funky_brownie": "§oFunky §rBrownie",
   "tooltip.ninetofiveessentials.funky_brownie": "§7Jolene's Brownies™",
   "item.ninetofiveessentials.chocolate_fish": "Le Fishe au Chocolat",
-  "item.ninetofiveessentials.liquorice_seeds": "Liquorice Seeds",
-  "item.ninetofiveessentials.liquorice_root": "Liquorice Root",
-  "item.ninetofiveessentials.liquorice_sweet": "Liquorice Sweet",
 
   "item.ninetofiveessentials.tar_glob": "Tar Glob",
   "item.ninetofiveessentials.tar_glob_block": "Tar Glob Block",

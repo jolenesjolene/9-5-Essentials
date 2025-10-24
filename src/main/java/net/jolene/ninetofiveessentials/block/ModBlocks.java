@@ -47,10 +47,6 @@ public class ModBlocks {
             properties -> new CoffeeBushBlock(properties.noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
-    public static final Block LIQUORICE_ROOT = registerBlockWithoutBlockItem("liquorice",
-            properties -> new LiquoriceRootBlock(properties.noCollision()
-                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
-                    .pistonBehavior(PistonBehavior.DESTROY)));
 
 
     public static final Block MINTING_TABLE = registerBlock("minting_table",

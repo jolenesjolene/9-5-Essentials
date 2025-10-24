@@ -30,14 +30,7 @@ public class ModItemGroups {
                             entries.add(ModBlocks.TAR_BRICK_SLAB);
                             entries.add(ModItems.DARK_IS_THE_NIGHT_MUSIC_DISC);
                             entries.add(ModItems.BAGUETTE);
-                            entries.add(ModItems.CROISSANT);
                             entries.add(ModItems.BERET);
-                            entries.add(ModItems.FUNKY_CIGARETTE);
-                            entries.add(ModItems.HEMP_SEEDS);
-                            entries.add(ModItems.HEMP_LEAVES);
-                            entries.add(ModItems.DRIED_HEMP);
-                            entries.add(ModItems.FUNKY_BROWNIE);
-                            entries.add(ModItems.FUNKY_CIGARETTE_MUSIC_DISC);
                             ItemStack coffeePotion = PotionContentsComponent.createStack(Items.POTION, ModPotions.COFFEE);
                             entries.add(coffeePotion);
                             ItemStack splashCoffeePotion = PotionContentsComponent.createStack(Items.SPLASH_POTION, ModPotions.COFFEE);
@@ -48,16 +41,16 @@ public class ModItemGroups {
                             entries.add(coffeeArrow);
                             entries.add(ModItems.COFFEE_CHERRIES);
                             entries.add(ModItems.COFFEE_BEANS);
-                            entries.add(ModItems.COFFEE_MEAL);
-                            entries.add(ModItems.TIRAMISU);
                             entries.add(ModItems.COFFEE_GUM);
+                            entries.add(ModItems.FUNKY_CIGARETTE);
+                            entries.add(ModItems.HEMP_SEEDS);
+                            entries.add(ModItems.HEMP_LEAVES);
+                            entries.add(ModItems.DRIED_HEMP);
                             entries.add(ModItems.CHOCOLATE);
                             entries.add(ModItems.BROWNIE);
+                            entries.add(ModItems.FUNKY_BROWNIE);
                             entries.add(ModItems.CHOCOLATE_FISH);
-                            entries.add(ModItems.LIQUORICE_SEEDS);
-                            entries.add(ModItems.LIQUORICE_ROOT);
-                            entries.add(ModItems.LIQUORICE_SWEET);
-                            entries.add(ModItems.BUTTER);
+                            entries.add(ModItems.FUNKY_CIGARETTE_MUSIC_DISC);
                             entries.add(ModBlocks.BRITNEY);
 
                         }).build());
