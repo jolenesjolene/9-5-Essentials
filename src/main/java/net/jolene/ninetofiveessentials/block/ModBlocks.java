@@ -86,7 +86,7 @@ public class ModBlocks {
 
             ));
     public static final Block SLOT_MACHINE = registerBlockWithItem("slot_machine",
-            settings -> new SlotMachineBlock(
+            settings -> new DartBoardBlock(
                     settings
                             .strength(3.0f)
                             .sounds(BlockSoundGroup.IRON)
