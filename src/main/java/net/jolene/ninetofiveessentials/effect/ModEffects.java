@@ -16,16 +16,12 @@ public class ModEffects {
                     .addAttributeModifier(EntityAttributes.MAX_HEALTH, Identifier.of(NineToFiveEssentials.MOD_ID, "ailment"), -2f,
                             EntityAttributeModifier.Operation.ADD_VALUE));
 
-    public static final RegistryEntry<StatusEffect> SERENTIY = registerStatusEffect("serenity",
+    public static final RegistryEntry<StatusEffect> SERENITY = registerStatusEffect("serenity",
             new SerenityEffect(StatusEffectCategory.BENEFICIAL, 0x5b8eeb)
     );
     public static final RegistryEntry<StatusEffect> OVERCAFFEINATED = registerStatusEffect(
             "overcaffeinated",
-            new AilmentEffect(StatusEffectCategory.BENEFICIAL, 0x783f04)
-    );
-    public static final RegistryEntry<StatusEffect> JITTERS = registerStatusEffect(
-            "jitters",
-            new AilmentEffect(StatusEffectCategory.HARMFUL, 0x783f04)
+            new OvercaffeinatedEffect(StatusEffectCategory.BENEFICIAL, 0x783f04)
     );
 
 

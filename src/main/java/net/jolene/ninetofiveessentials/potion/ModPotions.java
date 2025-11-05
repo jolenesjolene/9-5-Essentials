@@ -12,8 +12,7 @@ import net.minecraft.util.Identifier;
 public class ModPotions {
         public static final RegistryEntry<Potion> COFFEE = registerPotion(
                 new Potion("coffee",
-                        new StatusEffectInstance(ModEffects.OVERCAFFEINATED, 1200, 0),
-                        new StatusEffectInstance(ModEffects.JITTERS, 6000, 0)
+                        new StatusEffectInstance(ModEffects.OVERCAFFEINATED, 600, 0)
                         ));
 
 

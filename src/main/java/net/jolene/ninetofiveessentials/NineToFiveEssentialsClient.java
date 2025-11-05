@@ -23,14 +23,14 @@ public class NineToFiveEssentialsClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(ModParticles.COIN, Coin.Factory::new);
         BlockRenderLayerMap.putBlock(ModBlocks.HEMP_PLANT, BlockRenderLayer.CUTOUT);
 
-        LimelightShaderEvents.REGISTER_SHADERS.register(context -> {
-            if (context.type().equals(ShaderType.POST))
-            {
-                context.register().accept(
-                        null,
-                        new ManagedPostShader.Definition(Identifier.of(NineToFiveEssentials.MOD_ID, "rainbow"), new Pair<>(null, DefaultFramebufferSet.MAIN_ONLY))
-                );
+        //LimelightShaderEvents.REGISTER_SHADERS.register(context -> {
+           // if (context.type().equals(ShaderType.POST))
+            //{
+                //context.register().accept(
+                        //null,
+                        //new ManagedPostShader.Definition(Identifier.of(NineToFiveEssentials.MOD_ID, "rainbow"), new Pair<>(null, DefaultFramebufferSet.MAIN_ONLY))
+                //);
             }
-        });
-    }
+        //});
+    //}
 }

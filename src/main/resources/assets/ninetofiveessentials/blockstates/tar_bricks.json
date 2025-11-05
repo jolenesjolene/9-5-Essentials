@@ -1,18 +1,7 @@
 {
 	"variants": {
-		"": [
-			{
-				"model": "ninetofiveessentials:block/tar_bricks0", "weight": 2
-			},
-			{
-				"model": "ninetofiveessentials:block/tar_bricks1", "weight": 1
-			},
-			{
-				"model": "ninetofiveessentials:block/tar_bricks2", "weight": 1
-			},
-			{
-				"model": "ninetofiveessentials:block/tar_bricks3", "weight": 1
-			}
-		]
+		"": {
+			"model": "ninetofiveessentials:block/tar_bricks"
+		}
 	}
 }

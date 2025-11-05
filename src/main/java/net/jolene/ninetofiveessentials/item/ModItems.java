@@ -49,14 +49,10 @@ public class ModItems {
     public static final Item DRIED_HEMP = registerItem("dried_hemp", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"dried_hemp")))));
 
-    public static final Item CHOCOLATE = registerItem("chocolate", new Item(new Item.Settings().food(ModFoodComponents.CHOCOLATE)
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"chocolate")))));
     public static final Item BROWNIE = registerItem("brownie", new Item(new Item.Settings().food(ModFoodComponents.BROWNIE)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"brownie")))));
     public static final Item FUNKY_BROWNIE = registerItem("funky_brownie", new Item(new Item.Settings().food(ModFoodComponents.FUNKY_BROWNIE)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"funky_brownie")))));
-    public static final Item CHOCOLATE_FISH = registerItem("chocolate_fish", new Item(new Item.Settings().food(ModFoodComponents.CHOCOLATE_FISH)
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"chocolate_fish")))));
 
 
 
@@ -145,10 +141,8 @@ public class ModItems {
             entries.add(BAGUETTE);
             entries.add(VODKA);
             entries.add(BEER);
-            entries.add(CHOCOLATE);
             entries.add(BROWNIE);
             entries.add(FUNKY_BROWNIE);
-            entries.add(CHOCOLATE_FISH);;
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(BERET);

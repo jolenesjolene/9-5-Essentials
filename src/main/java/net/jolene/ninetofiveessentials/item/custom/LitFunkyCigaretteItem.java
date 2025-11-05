@@ -89,7 +89,7 @@ public class LitFunkyCigaretteItem extends Item {
         if (!world.isClient) {
             // Determine amplifier
             int currentAmplifier = 0;
-            StatusEffectInstance currentEffect = user.getStatusEffect(ModEffects.SERENTIY);
+            StatusEffectInstance currentEffect = user.getStatusEffect(ModEffects.SERENITY);
             if (currentEffect != null) {
                 currentAmplifier = currentEffect.getAmplifier() + 1;
                 if (currentAmplifier > MAX_AMPLIFIER) {
@@ -99,7 +99,7 @@ public class LitFunkyCigaretteItem extends Item {
 
             // Apply serenity effect
             user.addStatusEffect(new StatusEffectInstance(
-                    ModEffects.SERENTIY,
+                    ModEffects.SERENITY,
                     DURATION,
                     currentAmplifier,
                     false,

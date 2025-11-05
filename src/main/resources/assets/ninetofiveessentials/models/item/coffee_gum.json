@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ninetofiveessentials:item/croissant"
+    "layer0": "ninetofiveessentials:item/coffee_gum"
   }
 }

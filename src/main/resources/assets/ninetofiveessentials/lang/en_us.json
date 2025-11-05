@@ -1,6 +1,5 @@
 {
   "itemgroup.ninetofiveessentials.ninetofiveessentials": "9-5 Essentials",
-  "itemgroup.ninetofiveessentials.ninetofiveessentials_wip": "9-5 WIP",
 
   "item.ninetofiveessentials.cigarette": "Cigarette",
   "tooltip.ninetofiveessentials.cigarette": "§7Unlit",
@@ -12,7 +11,6 @@
   "tooltip.ninetofiveessentials.funky_cigarette": "§7Unlit",
   "item.ninetofiveessentials.lit_funky_cigarette": "§oFunky §rCigarette",
   "tooltip.ninetofiveessentials.lit_funky_cigarette": "§9Serenity (00:30)",
-  "tooltip.ninetofiveessentials.sweet_treat": "§7Sweet Treat",
 
   "item.minecraft.potion.effect.coffee": "Coffee",
   "item.minecraft.splash_potion.effect.coffee": "Throwable Coffee",
@@ -21,45 +19,76 @@
   "item.ninetofiveessentials.coffee_gum": "Coffee Gum",
   "tooltip.ninetofiveessentials.coffee_gum": "§7The, favorite treat of a certain temperamental dog...",
 
-  "item.ninetofiveessentials.vodka": "Vodka",
-  "item.ninetofiveessentials.beer": "Can O' Beer",
-
   "item.ninetofiveessentials.hemp_seeds": "Mary Jane's Seeds",
   "item.ninetofiveessentials.hemp_leaves": "Mary Jane",
   "item.ninetofiveessentials.dried_hemp": "Dried Mary Jane",
   "item.ninetofiveessentials.coffee_cherries": "Coffee Cherries",
   "item.ninetofiveessentials.coffee_beans": "Coffee Beans",
 
-  "item.ninetofiveessentials.chocolate": "Chocolate",
   "item.ninetofiveessentials.brownie": "Brownie",
   "item.ninetofiveessentials.funky_brownie": "§oFunky §rBrownie",
   "tooltip.ninetofiveessentials.funky_brownie": "§7Jolene's Brownies™",
-  "item.ninetofiveessentials.chocolate_fish": "Le Fishe au Chocolat",
 
-  "item.ninetofiveessentials.tar_glob": "Tar Glob",
-  "item.ninetofiveessentials.tar_glob_block": "Tar Glob Block",
-  "item.ninetofiveessentials.tar_brick": "Tar Brick",
 
-  "item.ninetofiveessentials.dextro_tablet": "Dextro Tablet",
 
   "item.ninetofiveessentials.baguette": "Baguette",
-
-
-
   "item.ninetofiveessentials.beret": "Beret",
   "tooltip.ninetofiveessentials.beret": "§7Channel your inner tortured artist!",
 
+
+  "item.ninetofiveessentials.dark_is_the_night_music_disc": "Music Disc",
+  "item.ninetofiveessentials.dark_is_the_night.desc": "Nikita Bogoslovsky - Dark is the Night",
+  "sounds.ninetofiveessentials.dark_is_the_night": "Depressing European music plays",
+  "item.ninetofiveessentials.funky_cigarette_music_disc": "Music Disc",
+  "item.ninetofiveessentials.funky_cigarette.desc": "Paolo Nutini - Funky Cigarette",
+  "sounds.ninetofiveessentials.funky_cigarette": "Paolo my beloved <3",
+
+  "sounds.ninetofiveessentials.puff": "Cigarette puff",
+  "sounds.ninetofiveessentials.fizzle": "Cigarette fizzles",
+
+  "effect.ninetofiveessentials.ailment": "Ailment",
+  "effect.ninetofiveessentials.serenity": "Serenity",
+  "effect.ninetofiveessentials.overcaffeinated": "Overcaffeinated",
+
+  "item.ninetofiveessentials.tar_glob": "Tar Glob",
+  "item.ninetofiveessentials.tar_brick": "Tar Brick",
+  "item.ninetofiveessentials.tar_bricks": "Tar Bricks",
+  "item.ninetofiveessentials.tar_brick_stairs": "Tar Brick Stairs",
+  "item.ninetofiveessentials.tar_brick_slab": "Tar Brick Slab",
+  "item.ninetofiveessentials.five_hundred_cigarettes": "Block of Cigarettes",
+  "tooltip.ninetofiveessentials.five_hundred_cigarettes": "§7500 CIGARETTES",
+  "item.ninetofiveessentials.britney": "Block of Britney",
+
+  "advancement.ninetofiveessentials.root": "9-5 Essentials",
+  "advancement.ninetofiveessentials.root.description": "Everything you need!",
+  "advancement.ninetofiveessentials.five_hundred": "500 CIGARETTES",
+  "advancement.ninetofiveessentials.five_hundred.description": "Obtain a block of cigarettes.",
+  "advancement.ninetofiveessentials.lung_cancer": "§oActually §r500 Cigarettes",
+  "advancement.ninetofiveessentials.lung_cancer.description": "Smoke enough cigarettes to kill a horse.",
+  "advancement.ninetofiveessentials.shaking": "The shaking has stopped...",
+  "advancement.ninetofiveessentials.shaking.description": "Smoke a cigarette to prevent Ailment V from running out.",
+  "advancement.ninetofiveessentials.sonic": "They Call Me Sonic",
+  "advancement.ninetofiveessentials.sonic.description": "Overcaffeinated!",
+  "advancement.ninetofiveessentials.waltuh": "Waltuh",
+  "advancement.ninetofiveessentials.waltuh.description": "Put it away! Someone might see.",
+  "advancement.ninetofiveessentials.knocks": "I AM the One Who Knocks",
+  "advancement.ninetofiveessentials.knocks.description": "You have grown wayyy too much.",
+
+
+  "item.ninetofiveessentials.vodka": "Vodka",
+  "item.ninetofiveessentials.beer": "Can O' Beer",
+  "item.ninetofiveessentials.bowling_pin": "Bowling Pin",
+  "sounds.ninetofiveessentials.wheel": "Slot machine blings",
+  "sounds.ninetofiveessentials.result": "Slot machine blings",
   "item.ninetofiveessentials.slot_machine": "Slot Machine",
   "tooltip.ninetofiveessentials.slot_machine": "§7Let’s go gambling!",
   "item.ninetofiveessentials.dice": "Dice",
-
   "item.ninetofiveessentials.minting_table": "Minting Table",
   "item.ninetofiveessentials.coin": "Coin",
   "tooltip.ninetofiveessentials.coin": "§7Legit... §oProbably.",
   "item.ninetofiveessentials.minted_coin": "Coin",
   "tooltip.ninetofiveessentials.minted_coin": "§7Minted",
   "item.ninetofiveessentials.block_of_coins": "BIG Coin",
-
   "item.ninetofiveessentials.plain_poker_chip": "Plain Poker Chip",
   "item.ninetofiveessentials.plain_poker_chip.tooltip": "§7No Value",
   "item.ninetofiveessentials.white_poker_chip": "Poker Chip",
@@ -86,42 +115,6 @@
   "item.ninetofiveessentials.maroon_poker_chip": "Poker Chip",
   "tooltip.ninetofiveessentials.maroon_poker_chip": "§7Maroon ⏵ §o$1,000",
   "tooltip.ninetofiveessentials.maroon_poker_chip.value": "§7Value: §f§o$1,000",
-
   "item.ninetofiveessentials.dart_board": "Dart Board",
-
-  "item.ninetofiveessentials.dark_is_the_night_music_disc": "Music Disc",
-  "item.ninetofiveessentials.dark_is_the_night.desc": "Nikita Bogoslovsky - Dark is the Night",
-  "sounds.ninetofiveessentials.dark_is_the_night": "Depressing European music plays",
-  "item.ninetofiveessentials.funky_cigarette_music_disc": "Music Disc",
-  "item.ninetofiveessentials.funky_cigarette.desc": "Paolo Nutini - Funky Cigarette",
-  "sounds.ninetofiveessentials.funky_cigarette": "Paolo my beloved <3",
-
-  "sounds.ninetofiveessentials.puff": "Cigarette puff",
-  "sounds.ninetofiveessentials.fizzle": "Cigarette fizzles",
-  "sounds.ninetofiveessentials.wheel": "Slot machine blings",
-  "sounds.ninetofiveessentials.result": "Slot machine blings",
-
-  "effect.ninetofiveessentials.ailment": "Ailment",
-  "effect.ninetofiveessentials.serenity": "Serenity",
-  "effect.ninetofiveessentials.munchies": "Munchies",
-  "effect.ninetofiveessentials.overcaffeinated": "Overcaffeinated",
-  "effect.ninetofiveessentials.jitters": "Jitters",
-
-  "item.ninetofiveessentials.five_hundred_cigarettes": "Block of Cigarettes",
-  "tooltip.ninetofiveessentials.five_hundred_cigarettes": "§7500 CIGARETTES",
-  "item.ninetofiveessentials.tar_bricks": "Tar Bricks",
-  "item.ninetofiveessentials.tar_brick_stairs": "Tar Brick Stairs",
-  "item.ninetofiveessentials.tar_brick_slab": "Tar Brick Slab",
-  "item.ninetofiveessentials.bowling_pin": "Bowling Pin",
-  "item.ninetofiveessentials.britney": "Block of Britney",
-
-  "advancement.ninetofiveessentials.root": "9-5 Essentials",
-  "advancement.ninetofiveessentials.root.description": "Everything you need!",
-
-  "advancement.ninetofiveessentials.sonic": "They Call Me Sonic",
-  "advancement.ninetofiveessentials.sonic.description": "Caffeine Rush!",
-  "advancement.ninetofiveessentials.five_hundred_cigarettes": "500 CIGARETTES",
-  "advancement.ninetofiveessentials.five_hundred_cigarettes.description": "Obtain a block of cigarettes.",
-  "advancement.ninetofiveessentials.lung_cancer": "Actual 500 Cigarettes",
-  "advancement.ninetofiveessentials.lung_cancer.description": "Smoke enough cigarettes to kill a horse."
+  "item.ninetofiveessentials.dextro_tablet": "Dextro Tablet"
 }

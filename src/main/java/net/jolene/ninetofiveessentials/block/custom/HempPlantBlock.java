@@ -11,22 +11,20 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.LightType;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
 
 public class HempPlantBlock extends PlantBlock implements Fertilizable {
-    public float getAmbientOcclusionLightLevel(BlockState state, BlockView world, BlockPos pos) {
-        return 1.0F;
-    }
+
+
     public static final int MAX_AGE = 5;
     public static final IntProperty AGE = IntProperty.of("age", 0, MAX_AGE);
     public static final BooleanProperty TOP = BooleanProperty.of("top");
 
-
-
     public HempPlantBlock(Settings settings) {
-        super(settings);
+        super(settings.ticksRandomly()); // Enable random ticking for growth
         this.setDefaultState(this.getStateManager().getDefaultState()
                 .with(AGE, 0)
                 .with(TOP, false));
@@ -39,13 +37,16 @@ public class HempPlantBlock extends PlantBlock implements Fertilizable {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(AGE);
-        builder.add(TOP);
+        builder.add(AGE, TOP);
     }
 
+    @Override
+    public float getAmbientOcclusionLightLevel(BlockState state, BlockView world, BlockPos pos) {
+        return 1.0F;
+    }
 
     @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, net.minecraft.block.ShapeContext context) {
         int age = state.get(AGE);
         if (age >= 3) {
             return VoxelShapes.cuboid(0, 0, 0, 1, 1 + ((age - 1) * 0.25f), 1);
@@ -66,9 +67,31 @@ public class HempPlantBlock extends PlantBlock implements Fertilizable {
 
     @Override
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
-        if (state.get(AGE) < MAX_AGE)
-        {
+        if (state.get(AGE) < MAX_AGE) {
             world.setBlockState(pos, state.with(AGE, state.get(AGE) + 1));
+        }
+    }
+
+    // --- Natural + Artificial Light Growth ---
+    @Override
+    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        int age = state.get(AGE);
+        if (age >= MAX_AGE) return;
+
+        int skyLight = world.getLightLevel(LightType.SKY, pos);
+        int blockLight = world.getLightLevel(LightType.BLOCK, pos);
+
+        boolean artificialLightStrong = blockLight > skyLight && blockLight >= 8;
+
+        if (artificialLightStrong) {
+            if (random.nextFloat() < 0.5f) {
+                world.setBlockState(pos, state.with(AGE, age + 1));
+            }
+        }
+        else {
+            if (skyLight >= 9 && random.nextFloat() < 0.05f) {
+                world.setBlockState(pos, state.with(AGE, age + 1));
+            }
         }
     }
 }

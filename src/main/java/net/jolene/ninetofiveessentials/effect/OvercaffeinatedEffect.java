@@ -23,7 +23,7 @@ public class OvercaffeinatedEffect extends StatusEffect {
         this.addAttributeModifier(
                 EntityAttributes.ATTACK_SPEED,
                 MODIFIER_ID_2,
-                10.0,
+                0.75,
                 EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL
         );
     }
