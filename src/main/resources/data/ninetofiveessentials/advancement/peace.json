@@ -1,28 +1,28 @@
 {
   "display": {
     "icon": {
-      "id": "ninetofiveessentials:coffee_beans",
+      "id": "ninetofiveessentials:funky_cigarette_music_disc",
       "count": 1
     },
     "title": {
-      "translate": "advancement.ninetofiveessentials.coffee"
+      "translate": "advancement.ninetofiveessentials.peace"
     },
     "description": {
-      "translate": "advancement.ninetofiveessentials.coffee.description"
+      "translate": "advancement.ninetofiveessentials.peace.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ninetofiveessentials:root",
+  "parent": "ninetofiveessentials:green",
   "criteria": {
     "tick": {
       "trigger": "minecraft:effects_changed",
       "conditions": {
         "items": [],
         "effects": {
-          "ninetofiveessentials:overcaffeinated": {}
+          "ninetofiveessentials:serenity": {}
         }
       }
     }

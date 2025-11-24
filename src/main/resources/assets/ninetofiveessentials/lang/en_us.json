@@ -63,16 +63,18 @@
   "advancement.ninetofiveessentials.root.description": "Everything you need!",
   "advancement.ninetofiveessentials.five_hundred": "500 CIGARETTES",
   "advancement.ninetofiveessentials.five_hundred.description": "Obtain a block of cigarettes.",
-  "advancement.ninetofiveessentials.lung_cancer": "§oActually §r500 Cigarettes",
-  "advancement.ninetofiveessentials.lung_cancer.description": "Smoke enough cigarettes to kill a horse.",
+  "advancement.ninetofiveessentials.lung_cancer": "Lung Cancer",
+  "advancement.ninetofiveessentials.lung_cancer.description": "Reach Ailment V.",
   "advancement.ninetofiveessentials.shaking": "The shaking has stopped...",
-  "advancement.ninetofiveessentials.shaking.description": "Smoke a cigarette to prevent Ailment V from running out.",
-  "advancement.ninetofiveessentials.sonic": "They Call Me Sonic",
-  "advancement.ninetofiveessentials.sonic.description": "Overcaffeinated!",
-  "advancement.ninetofiveessentials.waltuh": "Waltuh",
-  "advancement.ninetofiveessentials.waltuh.description": "Put it away! Someone might see.",
-  "advancement.ninetofiveessentials.knocks": "I AM the One Who Knocks",
-  "advancement.ninetofiveessentials.knocks.description": "You have grown wayyy too much.",
+  "advancement.ninetofiveessentials.shaking.description": "Finally!",
+  "advancement.ninetofiveessentials.coffee": "Twin Peaks",
+  "advancement.ninetofiveessentials.coffee.description": "Brew the perfect black coffee.",
+  "advancement.ninetofiveessentials.green": "Very Green Thumb",
+  "advancement.ninetofiveessentials.green.description": "I watched Jane die.",
+  "advancement.ninetofiveessentials.peace": "Peace at Last",
+  "advancement.ninetofiveessentials.peace.description": "Like, let's do what we do best.",
+
+
 
 
   "item.ninetofiveessentials.vodka": "Vodka",

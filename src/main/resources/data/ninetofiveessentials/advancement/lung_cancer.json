@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "ninetofiveessentials:lung_cancer",
+      "id": "ninetofiveessentials:cigarette_butt",
       "count": 1
     },
     "title": {
@@ -15,7 +15,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ninetofiveessentials:root",
+  "parent": "ninetofiveessentials:shaking",
   "criteria": {
     "tick": {
       "trigger": "minecraft:effects_changed",

@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "id": "ninetofiveessentials:hemp_leaves",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancement.ninetofiveessentials.green"
+    },
+    "description": {
+      "translate": "advancement.ninetofiveessentials.green.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ninetofiveessentials:root",
+  "criteria": {
+    "mary_jane": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "ninetofiveessentials:hemp_leaves"
+          }
+        ]
+      }
+    },
+    "dried_mary_jane": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "ninetofiveessentials:dried_hemp"
+          }
+        ]
+      }
+    },
+    "marys_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "ninetofiveessentials:hemp_seeds"
+          }
+        ]
+      }
+    }
+  }
+}

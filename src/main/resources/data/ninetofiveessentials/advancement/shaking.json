@@ -1,14 +1,14 @@
 {
   "display": {
     "icon": {
-      "id": "ninetofiveessentials:coffee_beans",
+      "id": "ninetofiveessentials:lit_cigarette",
       "count": 1
     },
     "title": {
-      "translate": "advancement.ninetofiveessentials.coffee"
+      "translate": "advancement.ninetofiveessentials.shaking"
     },
     "description": {
-      "translate": "advancement.ninetofiveessentials.coffee.description"
+      "translate": "advancement.ninetofiveessentials.shaking.description"
     },
     "frame": "task",
     "show_toast": true,
@@ -22,7 +22,7 @@
       "conditions": {
         "items": [],
         "effects": {
-          "ninetofiveessentials:overcaffeinated": {}
+          "ninetofiveessentials:ailment": {}
         }
       }
     }
