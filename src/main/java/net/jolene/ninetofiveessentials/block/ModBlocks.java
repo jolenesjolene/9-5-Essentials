@@ -3,6 +3,7 @@ package net.jolene.ninetofiveessentials.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jolene.ninetofiveessentials.NineToFiveEssentials;
 import net.jolene.ninetofiveessentials.block.custom.*;
+import net.jolene.ninetofiveessentials.item.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -98,7 +99,6 @@ public class ModBlocks {
         NineToFiveEssentials.LOGGER.info("Registering Blocks for " + NineToFiveEssentials.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
-            entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
             entries.add(ModBlocks.SLOT_MACHINE);
             entries.add(ModBlocks.DICE);
         });
@@ -106,6 +106,7 @@ public class ModBlocks {
             entries.add(ModBlocks.TAR_BRICKS);
             entries.add(ModBlocks.TAR_BRICK_STAIRS);
             entries.add(ModBlocks.TAR_BRICK_SLAB);
+            entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
         });
     }
 }

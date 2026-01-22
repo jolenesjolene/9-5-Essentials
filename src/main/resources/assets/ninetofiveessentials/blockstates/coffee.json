@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "age=0": { "model": "ninetofiveessentials:block/coffee/coffee_stage0" },
+    "age=1": { "model": "ninetofiveessentials:block/coffee/coffee_stage1" },
+    "age=2": { "model": "ninetofiveessentials:block/coffee/coffee_stage2" },
+    "age=3": { "model": "ninetofiveessentials:block/coffee/coffee_stage3" },
+    "age=4": { "model": "ninetofiveessentials:block/coffee/coffee_stage4" },
+    "age=5": { "model": "ninetofiveessentials:block/coffee/coffee_stage5" }
+  }
+}

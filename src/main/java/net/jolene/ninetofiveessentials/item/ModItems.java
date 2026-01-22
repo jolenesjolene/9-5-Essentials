@@ -101,14 +101,29 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(CIGARETTE);
             entries.add(CIGARETTE_BUTT);
+            entries.add(FUNKY_CIGARETTE);
             entries.add(COFFEE_CHERRIES);
             entries.add(COFFEE_GUM);
             entries.add(BAGUETTE);
             entries.add(BROWNIE);
             entries.add(FUNKY_BROWNIE);
         });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(TAR_GLOB);
+            entries.add(TAR_BRICK);
+            entries.add(COFFEE_BEANS);
+            entries.add(HEMP_LEAVES);
+            entries.add(DRIED_HEMP);;
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(ModItems.HEMP_SEEDS);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(BERET);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.add(DARK_IS_THE_NIGHT_MUSIC_DISC);
+            entries.add(FUNKY_CIGARETTE_MUSIC_DISC);
             entries.add(COIN);
             entries.add(WHITE_POKER_CHIP);
             entries.add(RED_POKER_CHIP);
@@ -119,18 +134,6 @@ public class ModItems {
             entries.add(PURPLE_POKER_CHIP);
             entries.add(MAROON_POKER_CHIP);
         });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(TAR_GLOB);
-            entries.add(TAR_BRICK);
-            entries.add(COFFEE_BEANS);
-            entries.add(HEMP_LEAVES);
-            entries.add(DRIED_HEMP);;
-        });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
-        });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
-            entries.add(DARK_IS_THE_NIGHT_MUSIC_DISC);
-            entries.add(FUNKY_CIGARETTE_MUSIC_DISC);
-        });
+
     }
 }
