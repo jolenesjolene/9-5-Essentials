@@ -51,14 +51,8 @@ public class ModItems {
 
     public static final Item BROWNIE = registerItem("brownie", new Item(new Item.Settings().food(ModFoodComponents.BROWNIE)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"brownie")))));
-    public static final Item FUNKY_BROWNIE = registerItem("funky_brownie", new Item(new Item.Settings().food(ModFoodComponents.FUNKY_BROWNIE)
+    public static final Item FUNKY_BROWNIE = registerItem("funky_brownie", new Item(new Item.Settings().food(ModFoodComponents.FUNKY_BROWNIE,ModFoodComponents.BROWNIE_EFFECT)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"funky_brownie")))));
-
-
-
-
-
-
 
 
 
@@ -66,7 +60,7 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_cherries")))));
     public static final Item COFFEE_BEANS = registerItem("coffee_beans", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_beans")))));
-    public static final Item COFFEE_GUM = registerItem("coffee_gum", new CoffeeGumItem(new Item.Settings().food(ModFoodComponents.COFFEE_GUM)
+    public static final Item COFFEE_GUM = registerItem("coffee_gum", new CoffeeGumItem(new Item.Settings().food(ModFoodComponents.COFFEE_GUM, ModFoodComponents.GUM_EFFECT)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_gum")))));
 
     public static final Item DARK_IS_THE_NIGHT_MUSIC_DISC = registerItem("dark_is_the_night_music_disc",

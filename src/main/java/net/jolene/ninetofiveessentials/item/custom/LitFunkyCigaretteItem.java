@@ -23,7 +23,6 @@ import net.minecraft.world.World;
 public class LitFunkyCigaretteItem extends Item {
     private static final int MAX_AMPLIFIER = 4;
     private static final int DURATION = 600; // 10 minutes in ticks
-    private static final double PUFF_VELOCITY = 0.05; // how fast the smoke moves outward
     private static final double RETURN_PAPER_CHANCE = 0.25;
 
     private static final Random RANDOM = new Random() {
@@ -114,34 +113,17 @@ public class LitFunkyCigaretteItem extends Item {
                     ModSounds.PUFF, SoundCategory.MASTER,
                     0.5F, 1.9F / (world.getRandom().nextFloat() * 1.8F + 2F));
 
-            // Particle
+            // Particle in front of face
             Vec3d lookVec = user.getRotationVec(1.0F);
             double x = user.getX() + lookVec.x * 0.5;
             double y = user.getY() + 1.6;
             double z = user.getZ() + lookVec.z * 0.5;
 
-            // give the puff a small velocity in the look direction so it drifts
-            double velocityX = lookVec.x * PUFF_VELOCITY;
-            double velocityY = lookVec.y * PUFF_VELOCITY;
-            double velocityZ = lookVec.z * PUFF_VELOCITY;
-
             ((ServerWorld) world).spawnParticles(
-                    ModParticles.PUFF,
+                    ParticleTypes.CAMPFIRE_COSY_SMOKE,
                     x, y, z,
-                    1, // one particle
-                    0, 0, 0,
-                    0
+                    3, 0.1, 0.1, 0.1, 0.01
             );
-
-            // set the velocity manually
-            ((ServerWorld) world).spawnParticles(
-                    ModParticles.PUFF,
-                    x, y, z,
-                    0, // no random spread
-                    velocityX, velocityY, velocityZ,
-                    0
-            );
-
             // Damage item
             stack.damage(1, user);
 

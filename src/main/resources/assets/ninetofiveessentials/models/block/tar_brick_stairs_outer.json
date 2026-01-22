@@ -2,7 +2,7 @@
   "parent": "minecraft:block/outer_stairs",
   "textures": {
     "bottom": "ninetofiveessentials:block/tar_bricks",
-    "top": "ninetofiveessentials:block/tar_bricks",
-    "side": "ninetofiveessentials:block/tar_bricks"
+    "side": "ninetofiveessentials:block/tar_bricks",
+    "top": "ninetofiveessentials:block/tar_bricks"
   }
 }

@@ -19,7 +19,9 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class ModBlocks {
-
+    public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
+            properties -> new Block(properties.strength(3f)
+                    .requiresTool()));
 
     public static final Block BRITNEY = registerBlock("britney",
             AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
@@ -31,12 +33,12 @@ public class ModBlocks {
             AbstractBlock.Settings.copy(Blocks.GOLD_BLOCK));
 
     public static final Block TAR_BRICKS = registerBlock("tar_bricks",
-            AbstractBlock.Settings.copy(Blocks.BRICKS));
-
+            properties -> new Block(properties.strength(3f).requiresTool()));
     public static final Block TAR_BRICK_SLAB = registerBlock("tar_brick_slab",
             properties -> new SlabBlock(properties.strength(2f).requiresTool()));
     public static final Block TAR_BRICK_STAIRS = registerBlock("tar_brick_stairs",
-            properties -> new SlabBlock(properties.strength(2f).requiresTool()));
+            properties -> new StairsBlock(ModBlocks.TAR_BRICKS.getDefaultState(),
+                    properties.strength(2f).requiresTool()));
 
 
     public static final Block HEMP_PLANT = registerBlockWithoutBlockItem("hemp",

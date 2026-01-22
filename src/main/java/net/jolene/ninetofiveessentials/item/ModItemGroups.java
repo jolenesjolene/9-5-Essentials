@@ -29,6 +29,14 @@ public class ModItemGroups {
                             entries.add(ModBlocks.TAR_BRICK_STAIRS);
                             entries.add(ModBlocks.TAR_BRICK_SLAB);
                             entries.add(ModItems.DARK_IS_THE_NIGHT_MUSIC_DISC);
+                            entries.add(ModItems.FUNKY_CIGARETTE);
+                            entries.add(ModItems.HEMP_SEEDS);
+                            entries.add(ModItems.HEMP_LEAVES);
+                            entries.add(ModItems.DRIED_HEMP);
+                            entries.add(ModItems.BROWNIE);
+                            entries.add(ModItems.FUNKY_BROWNIE);
+                            entries.add(ModItems.FUNKY_CIGARETTE_MUSIC_DISC);
+                            entries.add(ModBlocks.BRITNEY);
                             entries.add(ModItems.BAGUETTE);
                             entries.add(ModItems.BERET);
                             ItemStack coffeePotion = PotionContentsComponent.createStack(Items.POTION, ModPotions.COFFEE);
@@ -42,14 +50,6 @@ public class ModItemGroups {
                             entries.add(ModItems.COFFEE_CHERRIES);
                             entries.add(ModItems.COFFEE_BEANS);
                             entries.add(ModItems.COFFEE_GUM);
-                            entries.add(ModItems.FUNKY_CIGARETTE);
-                            entries.add(ModItems.HEMP_SEEDS);
-                            entries.add(ModItems.HEMP_LEAVES);
-                            entries.add(ModItems.DRIED_HEMP);
-                            entries.add(ModItems.BROWNIE);
-                            entries.add(ModItems.FUNKY_BROWNIE);
-                            entries.add(ModItems.FUNKY_CIGARETTE_MUSIC_DISC);
-                            entries.add(ModBlocks.BRITNEY);
 
                         }).build());
 
