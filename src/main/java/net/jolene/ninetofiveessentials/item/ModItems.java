@@ -35,10 +35,6 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"tar_brick")))));
     public static final Item BAGUETTE = registerItem("baguette", new Item(new Item.Settings().food(ModFoodComponents.BAGUETTE)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"baguette")))));
-    public static final Item VODKA = registerItem("vodka", new Item(new Item.Settings().food(ModFoodComponents.VODKA)
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"vodka"))).maxCount(1)));
-    public static final Item BEER = registerItem("beer", new Item(new Item.Settings().food(ModFoodComponents.BEER)
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"beer"))).maxCount(3)));
 
     public static final Item HEMP_SEEDS = registerItem("hemp_seeds", new BlockItem(ModBlocks.HEMP_PLANT, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"hemp_seeds")))));
@@ -73,35 +69,10 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"beret"))).maxCount(1)));
 
 
-    public static final Item ROBOS = registerItem("robos", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"robos"))).maxCount(16)));
-    public static final Item CRUSHED_TABLETS = registerItem("crushed_tablets", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"crushed_tablets"))).maxCount(16)));
-    public static final Item ROBO_GELS = registerItem("robo_gels", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"gel_tablets"))).maxCount(16)));
 
-    public static final Item ALD = registerItem("ald", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"ald"))).maxCount(1)));
-    public static final Item FUNKY_FUNGI = registerItem("funky_fungi", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"funky_fungi"))).maxCount(64)));
-    public static final Item FUNKY_FUNGI_STEW = registerItem("funky_fungi_stew", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"funky_fungi_stew"))).maxCount(64)));
+    public static final Item COIN = registerItem("coin", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coin")))));
 
-    public static final Item TABLET_BOTTLE = registerItem("tablet_bottle", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"tablet_bottle"))).maxCount(1)));
-
-
-
-
-
-
-
-
-    public static final Item MINTED_COIN = registerItem("minted_coin", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"minted_coin")))));
-
-    public static final Item PLAIN_POKER_CHIP = registerItem("plain_poker_chip", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"plain_poker_chip")))));
     public static final Item WHITE_POKER_CHIP = registerItem("white_poker_chip", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"white_poker_chip")))));
     public static final Item RED_POKER_CHIP = registerItem("red_poker_chip", new Item(new Item.Settings()
@@ -133,14 +104,12 @@ public class ModItems {
             entries.add(COFFEE_CHERRIES);
             entries.add(COFFEE_GUM);
             entries.add(BAGUETTE);
-            entries.add(VODKA);
-            entries.add(BEER);
             entries.add(BROWNIE);
             entries.add(FUNKY_BROWNIE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(BERET);
-            entries.add(MINTED_COIN);
+            entries.add(COIN);
             entries.add(WHITE_POKER_CHIP);
             entries.add(RED_POKER_CHIP);
             entries.add(ORANGE_POKER_CHIP);
@@ -156,7 +125,6 @@ public class ModItems {
             entries.add(COFFEE_BEANS);
             entries.add(HEMP_LEAVES);
             entries.add(DRIED_HEMP);;
-            entries.add(PLAIN_POKER_CHIP);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
         });

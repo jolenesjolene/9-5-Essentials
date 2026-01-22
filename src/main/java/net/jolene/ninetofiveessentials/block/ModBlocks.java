@@ -1,6 +1,5 @@
 package net.jolene.ninetofiveessentials.block;
 
-import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jolene.ninetofiveessentials.NineToFiveEssentials;
 import net.jolene.ninetofiveessentials.block.custom.*;
@@ -19,18 +18,12 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class ModBlocks {
-    public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
-            properties -> new Block(properties.strength(3f)
-                    .requiresTool()));
 
     public static final Block BRITNEY = registerBlock("britney",
             AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
 
     public static final Block FIVE_HUNDRED_CIGARETTES = registerBlock("five_hundred_cigarettes",
             AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
-
-    public static final Block BLOCK_OF_COINS = registerBlock("block_of_coins",
-            AbstractBlock.Settings.copy(Blocks.GOLD_BLOCK));
 
     public static final Block TAR_BRICKS = registerBlock("tar_bricks",
             properties -> new Block(properties.strength(3f).requiresTool()));
@@ -50,42 +43,12 @@ public class ModBlocks {
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
-
-    public static final Block MINTING_TABLE = registerBlock("minting_table",
-            AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE));
-
-    public static final Block COIN = registerBlockWithItem("coin",
-            settings -> new CoinLayerBlock(
-                    settings
-                    .strength(0.1f)
-                    .sounds(BlockSoundGroup.LANTERN)
-                    .nonOpaque()
-                    .noCollision()  // Snow layers have no collision on top layers, you can tweak this
-            )
-    );
-
     public static final Block DICE = registerBlockWithItem("dice",
             settings -> new DiceBlock(
                     settings
                             .strength(0.0f)  // Instantly breakable
                             .sounds(BlockSoundGroup.BONE)
                             .nonOpaque()
-            ));
-    public static final Block BOWLING_PIN = registerBlockWithItem("bowling_pin",
-            settings -> new BowlingPinBlock(
-                    settings
-                            .strength(0.0f)  // Instantly breakable
-                            .sounds(BlockSoundGroup.BAMBOO)
-                            .nonOpaque()
-
-            ));
-    public static final Block DART_BOARD = registerBlockWithItem("dart_board",
-            settings -> new DartBoardBlock(
-                    settings
-                            .strength(0.0f)  // Instantly breakable
-                            .sounds(BlockSoundGroup.BAMBOO)
-                            .nonOpaque()
-
             ));
     public static final Block SLOT_MACHINE = registerBlockWithItem("slot_machine",
             settings -> new DartBoardBlock(
@@ -138,16 +101,11 @@ public class ModBlocks {
             entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
             entries.add(ModBlocks.SLOT_MACHINE);
             entries.add(ModBlocks.DICE);
-            entries.add(ModBlocks.BOWLING_PIN);
-            entries.add(ModBlocks.DART_BOARD);
-            entries.add(ModBlocks.MINTING_TABLE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.TAR_BRICKS);
             entries.add(ModBlocks.TAR_BRICK_STAIRS);
             entries.add(ModBlocks.TAR_BRICK_SLAB);
-            entries.add(ModBlocks.COIN);
-            entries.add(ModBlocks.BLOCK_OF_COINS);
         });
     }
 }

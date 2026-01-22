@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "ninetofiveessentials:item/poker_chips/plain_poker_chip"
-  }
-}

@@ -75,24 +75,15 @@
   "advancement.ninetofiveessentials.peace.description": "Like, let's do what we do best.",
 
 
+  "tooltip.ninetofiveessentials.gambling": "§o§c§lWIP §r§cContent for Gambling Update™",
 
-
-  "item.ninetofiveessentials.vodka": "Vodka",
-  "item.ninetofiveessentials.beer": "Can O' Beer",
-  "item.ninetofiveessentials.bowling_pin": "Bowling Pin",
-  "sounds.ninetofiveessentials.wheel": "Slot machine blings",
-  "sounds.ninetofiveessentials.result": "Slot machine blings",
+  "item.ninetofiveessentials.coin": "Coin",
+  "tooltip.ninetofiveessentials.coin": "Bury me with my money!",
   "item.ninetofiveessentials.slot_machine": "Slot Machine",
   "tooltip.ninetofiveessentials.slot_machine": "§7Let’s go gambling!",
-  "item.ninetofiveessentials.dice": "Dice",
-  "item.ninetofiveessentials.minting_table": "Minting Table",
-  "item.ninetofiveessentials.coin": "Coin",
-  "tooltip.ninetofiveessentials.coin": "§7Legit... §oProbably.",
-  "item.ninetofiveessentials.minted_coin": "Coin",
-  "tooltip.ninetofiveessentials.minted_coin": "§7Minted",
-  "item.ninetofiveessentials.block_of_coins": "BIG Coin",
-  "item.ninetofiveessentials.plain_poker_chip": "Plain Poker Chip",
-  "item.ninetofiveessentials.plain_poker_chip.tooltip": "§7No Value",
+  "sounds.ninetofiveessentials.wheel": "Slot machine blings",
+  "sounds.ninetofiveessentials.result": "Slot machine blings",
+  "item.ninetofiveessentials.dice": "Dice Block",
   "item.ninetofiveessentials.white_poker_chip": "Poker Chip",
   "tooltip.ninetofiveessentials.white_poker_chip": "§7White ⏵ §o$1",
   "tooltip.ninetofiveessentials.white_poker_chip.value": "§7Value: §f§o$1",
@@ -116,7 +107,5 @@
   "tooltip.ninetofiveessentials.purple_poker_chip.value": "§7Value: §f§o$500",
   "item.ninetofiveessentials.maroon_poker_chip": "Poker Chip",
   "tooltip.ninetofiveessentials.maroon_poker_chip": "§7Maroon ⏵ §o$1,000",
-  "tooltip.ninetofiveessentials.maroon_poker_chip.value": "§7Value: §f§o$1,000",
-  "item.ninetofiveessentials.dart_board": "Dart Board",
-  "item.ninetofiveessentials.dextro_tablet": "Dextro Tablet"
+  "tooltip.ninetofiveessentials.maroon_poker_chip.value": "§7Value: §f§o$1,000"
 }

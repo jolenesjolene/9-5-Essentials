@@ -33,39 +33,50 @@ public class ModItemTooltips {
             if (itemStack.isOf(ModItems.BERET)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.beret"));
             }
+            if (itemStack.isOf(ModItems.COIN)) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.coin"));
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
+            }
+            if (itemStack.isOf(ModBlocks.DICE.asItem())) {
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
+            }
             if (itemStack.isOf(ModBlocks.SLOT_MACHINE.asItem())) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.slot_machine"));
-            }
-            if (itemStack.isOf(ModBlocks.COIN.asItem())) {
-                list.add(Text.translatable("tooltip.ninetofiveessentials.coin"));
-            }
-            if (itemStack.isOf(ModItems.MINTED_COIN)) {
-                list.add(Text.translatable("tooltip.ninetofiveessentials.minted_coin"));
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
             }
             if (itemStack.isOf(ModItems.WHITE_POKER_CHIP)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.white_poker_chip"));
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
             }
             if (itemStack.isOf(ModItems.RED_POKER_CHIP)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.red_poker_chip"));
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
             }
             if (itemStack.isOf(ModItems.ORANGE_POKER_CHIP)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.orange_poker_chip"));
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
             }
             if (itemStack.isOf(ModItems.YELLOW_POKER_CHIP)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.yellow_poker_chip"));
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
             }
             if (itemStack.isOf(ModItems.GREEN_POKER_CHIP)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.green_poker_chip"));
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
             }
             if (itemStack.isOf(ModItems.BLACK_POKER_CHIP)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.black_poker_chip"));
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
             }
             if (itemStack.isOf(ModItems.PURPLE_POKER_CHIP)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.purple_poker_chip"));
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
             }
             if (itemStack.isOf(ModItems.MAROON_POKER_CHIP)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.maroon_poker_chip"));
+                list.add(Text.translatable("tooltip.ninetofiveessentials.gambling"));
             }
+
         });
     }
 
