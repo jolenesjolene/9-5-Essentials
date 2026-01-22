@@ -12,7 +12,6 @@ public class SerenityEffect extends StatusEffect {
     }
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
-        // return true so applyUpdateEffect is called every tick
         return true;
     }
     @Override
@@ -24,7 +23,6 @@ public class SerenityEffect extends StatusEffect {
             hostile.setAttacking(false);
         }
 
-        // return super if you want the default logic too (if any), or true if you want effect to continue
         return super.applyUpdateEffect(world, entity, amplifier);
     }
 }

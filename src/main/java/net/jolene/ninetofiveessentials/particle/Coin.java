@@ -66,7 +66,7 @@ public class Coin extends SpriteBillboardParticle {
             this.alpha = 1.0f;
         }
 
-        this.scale = 0.3f;  // keep size fixed
+        this.scale = 0.3f;
     }
 
     public float getAlpha(float tickDelta) {

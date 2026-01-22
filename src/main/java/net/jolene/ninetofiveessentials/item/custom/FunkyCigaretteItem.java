@@ -29,7 +29,6 @@ public class FunkyCigaretteItem extends Item {
             ItemStack offHandStack = user.getStackInHand(offHand);
 
             if (offHandStack.getItem() == Items.FLINT_AND_STEEL) {
-                // Damage the flint and steel by 1
                 offHandStack.damage(1, user);
                 world.playSound(
                         null,
@@ -52,8 +51,7 @@ public class FunkyCigaretteItem extends Item {
                         5, 0, 0, 0, 0
                 );
 
-                // Replace the current item with a different item (example: DIAMOND)
-                ItemStack newItem = new ItemStack(ModItems.LIT_FUNKY_CIGARETTE); // replace with your desired item
+                ItemStack newItem = new ItemStack(ModItems.LIT_FUNKY_CIGARETTE);
                 user.setStackInHand(hand, newItem);
 
                 return ActionResult.SUCCESS;

@@ -15,7 +15,7 @@ public class Puff extends SpriteBillboardParticle {
         this.spriteProvider = spriteProvider;
 
         this.velocityMultiplier = 0.8f;
-        this.maxAge = 40; // ⏳ double the lifespan
+        this.maxAge = 40;
 
         this.scale(2.0f);
 
@@ -28,7 +28,7 @@ public class Puff extends SpriteBillboardParticle {
         this.alpha = 0.0f;
 
         this.velocityX = 0.0;
-        this.velocityY = 0.01; // 🪶 quarter of the original rise speed
+        this.velocityY = 0.01;
         this.velocityZ = 0.0;
 
         this.gravityStrength = 0.0f;
@@ -50,7 +50,7 @@ public class Puff extends SpriteBillboardParticle {
             this.alpha = 1.0f;
         }
 
-        this.velocityY += 0.0005; // 🪜 slower upward acceleration
+        this.velocityY += 0.0005;
     }
 
     @Override

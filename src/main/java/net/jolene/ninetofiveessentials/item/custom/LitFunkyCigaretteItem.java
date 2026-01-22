@@ -86,7 +86,6 @@ public class LitFunkyCigaretteItem extends Item {
         ItemStack stack = user.getStackInHand(hand);
 
         if (!world.isClient) {
-            // Determine amplifier
             int currentAmplifier = 0;
             StatusEffectInstance currentEffect = user.getStatusEffect(ModEffects.SERENITY);
             if (currentEffect != null) {
@@ -96,7 +95,6 @@ public class LitFunkyCigaretteItem extends Item {
                 }
             }
 
-            // Apply serenity effect
             user.addStatusEffect(new StatusEffectInstance(
                     ModEffects.SERENITY,
                     DURATION,
@@ -105,15 +103,11 @@ public class LitFunkyCigaretteItem extends Item {
                     true
             ));
 
-            // Cooldown
             user.getItemCooldownManager().set(getDefaultStack(), 60);
 
-            // Sound puff
             world.playSound(null, user.getX(), user.getY(), user.getZ(),
                     ModSounds.PUFF, SoundCategory.MASTER,
                     0.5F, 1.9F / (world.getRandom().nextFloat() * 1.8F + 2F));
-
-            // Particle in front of face
             Vec3d lookVec = user.getRotationVec(1.0F);
             double x = user.getX() + lookVec.x * 0.5;
             double y = user.getY() + 1.6;
@@ -124,14 +118,11 @@ public class LitFunkyCigaretteItem extends Item {
                     x, y, z,
                     3, 0.1, 0.1, 0.1, 0.01
             );
-            // Damage item
             stack.damage(1, user);
 
 
-            // When fully used up
             if (stack.getDamage() >= stack.getMaxDamage() - 1) {
                 if (RANDOM.nextDouble() < RETURN_PAPER_CHANCE) {
-                    // 25% chance to return paper
                     user.setStackInHand(hand, new ItemStack(net.minecraft.item.Items.PAPER));
                 } else {
                     user.setStackInHand(hand, ItemStack.EMPTY);

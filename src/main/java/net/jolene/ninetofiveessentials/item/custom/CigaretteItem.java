@@ -52,8 +52,7 @@ public class CigaretteItem extends Item {
                         5, 0, 0, 0, 0
                 );
 
-                // Replace the current item with a different item (example: DIAMOND)
-                ItemStack newItem = new ItemStack(ModItems.LIT_CIGARETTE); // replace with your desired item
+                ItemStack newItem = new ItemStack(ModItems.LIT_CIGARETTE);
                 user.setStackInHand(hand, newItem);
 
                 return ActionResult.SUCCESS;

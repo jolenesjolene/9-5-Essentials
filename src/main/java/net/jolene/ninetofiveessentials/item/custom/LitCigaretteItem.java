@@ -18,7 +18,7 @@ import net.minecraft.world.World;
 
 public class LitCigaretteItem extends Item {
     private static final int MAX_AMPLIFIER = 4;
-    private static final int DURATION = 12000; // 10 minutes in ticks
+    private static final int DURATION = 12000;
 
     public LitCigaretteItem(Settings settings) {
         super(settings);
@@ -29,7 +29,6 @@ public class LitCigaretteItem extends Item {
         ItemStack stack = user.getStackInHand(hand);
 
         if (!world.isClient) {
-            // Determine current amplifier
             int currentAmplifier = 0;
             StatusEffectInstance currentEffect = user.getStatusEffect(ModEffects.AILMENT);
             if (currentEffect != null) {
@@ -39,7 +38,6 @@ public class LitCigaretteItem extends Item {
                 }
             }
 
-            // Apply updated effects
             user.addStatusEffect(new StatusEffectInstance(
                     ModEffects.AILMENT,
                     DURATION,
@@ -48,13 +46,11 @@ public class LitCigaretteItem extends Item {
                     true
             ));
 
-            // Cooldown
             user.getItemCooldownManager().set(getDefaultStack(), 60);
             world.playSound(null, user.getX(), user.getY(), user.getZ(),
                     ModSounds.PUFF, SoundCategory.MASTER,
                     0.5F, 1.9F / (world.getRandom().nextFloat() * 1.8F + 2F));
 
-            // Particle in front of face
             Vec3d lookVec = user.getRotationVec(1.0F);
             double x = user.getX() + lookVec.x * 0.5;
             double y = user.getY() + 1.6;
@@ -66,7 +62,6 @@ public class LitCigaretteItem extends Item {
                     3, 0.1, 0.1, 0.1, 0.01
             );
 
-            // Damage item
             stack.damage(1, user);
 
             if (stack.getDamage() >= stack.getMaxDamage() - 1) {

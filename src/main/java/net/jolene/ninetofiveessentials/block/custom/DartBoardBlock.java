@@ -22,10 +22,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 public class DartBoardBlock extends Block {
-    // Use the existing facing property
     public static final IntProperty POWER = Properties.POWER;  // 0–15
-    // FACING is from HorizontalFacingBlock
-    // Block states need to include both
     private static final VoxelShape SHAPE_NORTH = Block.createCuboidShape(0, 0, 0.875 * 16, 16, 16, 16);
     private static final VoxelShape SHAPE_SOUTH = Block.createCuboidShape(0, 0, 0, 16, 16, 0.125 * 16);
     private static final VoxelShape SHAPE_WEST  = Block.createCuboidShape(0.875 * 16, 0, 0, 16, 16, 16);
@@ -81,35 +78,26 @@ public class DartBoardBlock extends Block {
     public void onProjectileHit(World world, BlockState state, BlockHitResult hit, ProjectileEntity projectile) {
         if (!world.isClient) {
             BlockPos pos = hit.getBlockPos();
-            // Hit position relative inside block space (0.0 to 1.0)
             double fx = hit.getPos().getX() - pos.getX();
             double fy = hit.getPos().getY() - pos.getY();
             double cz = hit.getPos().getZ() - pos.getZ();
-            // Determine 2D distance in the plane of the dartboard surface:
             Direction face = state.get(HorizontalFacingBlock.FACING);
             double dx, dy;
             if (face == Direction.NORTH || face == Direction.SOUTH) {
-                // board is vertical in Z plane, so distance in X & Y
                 dx = fx - 0.5;
                 dy = fy - 0.5;
             } else {
-                // EAST / WEST: board is along X plane, use Z & Y
                 dx = cz - 0.5;
                 dy = fy - 0.5;
             }
             double dist = Math.sqrt(dx * dx + dy * dy);
-            // Max possible dist from center to corner ~ sqrt(0.5² + 0.5²) = ~0.707
             double max = Math.sqrt(0.5 * 0.5 + 0.5 * 0.5);
             double norm = Math.max(0.0, 1.0 - (dist / max));
-            // Map to strength 1–8
             int strength = MathHelper.clamp((int)Math.ceil(norm * 7.0) + 1, 1, 8);
 
-            // Convert your 1–8 scale to 0–15 for comparator; e.g. multiply by ~ ≈ (15/8)
             int comp = (int) MathHelper.clamp(Math.round(strength * (15f / 8f)), 0, 15);
 
-            // Update block state power
             world.setBlockState(pos, state.with(POWER, comp), 3);
-            // Notify neighbors for comparator update
             world.updateNeighbors(pos, this);
         }
         super.onProjectileHit(world, state, hit, projectile);

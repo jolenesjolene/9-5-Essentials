@@ -51,7 +51,6 @@ public class CoffeeGumItem extends Item {
                     }
                 }
 
-                // Consume item
                 if (!player.isCreative()) {
                     stack.decrement(1);
                 }

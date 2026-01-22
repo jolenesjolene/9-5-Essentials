@@ -24,7 +24,7 @@ public class HempPlantBlock extends PlantBlock implements Fertilizable {
     public static final BooleanProperty TOP = BooleanProperty.of("top");
 
     public HempPlantBlock(Settings settings) {
-        super(settings.ticksRandomly()); // Enable random ticking for growth
+        super(settings.ticksRandomly());
         this.setDefaultState(this.getStateManager().getDefaultState()
                 .with(AGE, 0)
                 .with(TOP, false));
@@ -72,7 +72,6 @@ public class HempPlantBlock extends PlantBlock implements Fertilizable {
         }
     }
 
-    // --- Natural + Artificial Light Growth ---
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         int age = state.get(AGE);

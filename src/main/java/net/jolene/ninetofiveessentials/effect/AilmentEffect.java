@@ -9,7 +9,6 @@ public class AilmentEffect extends StatusEffect {
         super(category, color, ParticleTypes.ASH);
     }
 
-    // Run effect logic every tick
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         return true;
