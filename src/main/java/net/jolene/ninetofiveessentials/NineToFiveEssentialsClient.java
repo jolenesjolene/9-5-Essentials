@@ -16,5 +16,6 @@ public class NineToFiveEssentialsClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(ModParticles.PUFF, Puff.Factory::new);
         ParticleFactoryRegistry.getInstance().register(ModParticles.COIN, Coin.Factory::new);
         BlockRenderLayerMap.putBlock(ModBlocks.HEMP_PLANT, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.COFFEE_BUSH, BlockRenderLayer.CUTOUT);
     }
 }

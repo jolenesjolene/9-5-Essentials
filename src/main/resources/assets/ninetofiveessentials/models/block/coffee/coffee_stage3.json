@@ -4,7 +4,7 @@
 	"parent": "minecraft:block/cross",
 	"ambientocclusion": false,
 	"textures": {
-		"cross": "ninetofiveessentials:block/hemp/hemp_stage3"
+		"cross": "ninetofiveessentials:block/coffee/coffee_stage3"
 	},
 	"elements": [
 		{
