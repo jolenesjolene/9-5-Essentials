@@ -48,7 +48,7 @@ public class CoffeeBushBlock extends PlantBlock implements Fertilizable {
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         int age = state.get(AGE);
         if (age >= 3) {
-            return VoxelShapes.cuboid(0, 0, 0, 1, 1 + ((age - 1) * 0.25f), 1);
+            return VoxelShapes.fullCube();
         } else {
             return VoxelShapes.fullCube();
         }
