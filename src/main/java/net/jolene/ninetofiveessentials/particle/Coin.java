@@ -3,19 +3,16 @@ package net.jolene.ninetofiveessentials.particle;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.particle.*;
+import net.minecraft.client.texture.Sprite;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particle.SimpleParticleType;
 import net.minecraft.util.math.random.Random;
 import org.jetbrains.annotations.Nullable;
 
 @Environment(EnvType.CLIENT)
-public class Coin extends SpriteBillboardParticle {
-    private final SpriteProvider spriteProvider;
-
-    public Coin(ClientWorld world, double x, double y, double z, SpriteProvider spriteProvider) {
-        super(world, x, y, z);
-
-        this.spriteProvider = spriteProvider;
+public class Coin extends BillboardParticle {
+    public Coin(ClientWorld world, double x, double y, double z, Sprite sprite) {
+        super(world, x, y, z, sprite);
 
         Random random = world.getRandom();
 
@@ -32,7 +29,7 @@ public class Coin extends SpriteBillboardParticle {
         this.maxAge = 80;
 
         this.scale = 0.3f;  // much smaller size now
-        this.setSprite(spriteProvider.getSprite(Random.create(0)));
+        this.setSprite(sprite);
 
         this.alpha = 1.0f;
 
@@ -74,13 +71,13 @@ public class Coin extends SpriteBillboardParticle {
     }
 
     @Override
-    public ParticleTextureSheet getType() {
-        return ParticleTextureSheet.PARTICLE_SHEET_TRANSLUCENT;  // translucent for fading
+    public int getBrightness(float tickDelta) {
+        return 0xF000F0;
     }
 
     @Override
-    public int getBrightness(float tickDelta) {
-        return 0xF000F0;
+    protected RenderType getRenderType() {
+        return RenderType.PARTICLE_ATLAS_TRANSLUCENT;
     }
 
     @Environment(EnvType.CLIENT)
@@ -91,11 +88,9 @@ public class Coin extends SpriteBillboardParticle {
             this.spriteProvider = spriteProvider;
         }
 
-        @Nullable
         @Override
-        public Particle createParticle(SimpleParticleType parameters, ClientWorld world, double x, double y, double z,
-                                       double velocityX, double velocityY, double velocityZ) {
-            return new Coin(world, x, y, z, this.spriteProvider);
+        public @org.jspecify.annotations.Nullable Particle createParticle(SimpleParticleType parameters, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, Random random) {
+            return new Coin(world, x, y, z, this.spriteProvider.getFirst());
         }
     }
 }

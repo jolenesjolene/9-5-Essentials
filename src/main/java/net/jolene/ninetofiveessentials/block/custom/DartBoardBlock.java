@@ -76,7 +76,7 @@ public class DartBoardBlock extends Block {
 
     @Override
     public void onProjectileHit(World world, BlockState state, BlockHitResult hit, ProjectileEntity projectile) {
-        if (!world.isClient) {
+        if (!world.isClient()) {
             BlockPos pos = hit.getBlockPos();
             double fx = hit.getPos().getX() - pos.getX();
             double fy = hit.getPos().getY() - pos.getY();
@@ -109,7 +109,7 @@ public class DartBoardBlock extends Block {
     }
 
     @Override
-    public int getComparatorOutput(BlockState state, World world, BlockPos pos) {
+    protected int getComparatorOutput(BlockState state, World world, BlockPos pos, Direction direction) {
         return state.get(POWER);
     }
 }

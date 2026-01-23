@@ -28,7 +28,7 @@ public class LitCigaretteItem extends Item {
     public ActionResult use(World world, PlayerEntity user, Hand hand) {
         ItemStack stack = user.getStackInHand(hand);
 
-        if (!world.isClient) {
+        if (!world.isClient()) {
             int currentAmplifier = 0;
             StatusEffectInstance currentEffect = user.getStatusEffect(ModEffects.AILMENT);
             if (currentEffect != null) {

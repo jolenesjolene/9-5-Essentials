@@ -8,7 +8,7 @@ import net.minecraft.server.world.ServerWorld;
 
 public class SerenityEffect extends StatusEffect {
     public SerenityEffect(StatusEffectCategory category, int color) {
-        super(category, color, ParticleTypes.EFFECT);
+        super(category, color);
     }
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
@@ -16,7 +16,7 @@ public class SerenityEffect extends StatusEffect {
     }
     @Override
     public boolean applyUpdateEffect(ServerWorld world, LivingEntity entity, int amplifier) {
-        if (world.isClient) return false;
+        if (world.isClient()) return false;
 
         if (entity instanceof HostileEntity hostile) {
             hostile.setTarget(null);

@@ -46,7 +46,7 @@ public class DiceBlock extends FallingBlock {
     public void onLanding(World world, BlockPos pos, BlockState fallState, BlockState hitState, FallingBlockEntity entity) {
         super.onLanding(world, pos, fallState, hitState, entity);
 
-        if (!world.isClient && world instanceof ServerWorld serverWorld) {
+        if (!world.isClient() && world instanceof ServerWorld serverWorld) {
             Direction randomFacing = Direction.random(world.getRandom());
             BlockState newState = fallState.with(FACING, randomFacing);
 
@@ -84,7 +84,7 @@ public class DiceBlock extends FallingBlock {
     }
 
     @Override
-    public int getComparatorOutput(BlockState state, World world, BlockPos pos) {
+    protected int getComparatorOutput(BlockState state, World world, BlockPos pos, Direction direction) {
         return getRollFromFacing(state.get(FACING));
     }
 

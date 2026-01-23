@@ -24,7 +24,7 @@ public class CigaretteItem extends Item {
     @Override
 
     public ActionResult use(World world, PlayerEntity user, Hand hand) {
-        if (!world.isClient) {
+        if (!world.isClient()) {
             Hand offHand = hand == Hand.MAIN_HAND ? Hand.OFF_HAND : Hand.MAIN_HAND;
             ItemStack offHandStack = user.getStackInHand(offHand);
 

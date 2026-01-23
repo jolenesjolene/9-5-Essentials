@@ -1,25 +1,22 @@
 package net.jolene.ninetofiveessentials.particle;
 
 import net.minecraft.client.particle.*;
+import net.minecraft.client.texture.Sprite;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particle.SimpleParticleType;
+import net.minecraft.util.math.random.Random;
 import org.jetbrains.annotations.Nullable;
 
-public class Puff extends SpriteBillboardParticle {
-    private final SpriteProvider spriteProvider;
-
-    public Puff(ClientWorld clientWorld, double x, double y, double z,
-                SpriteProvider spriteProvider, double xSpeed, double ySpeed, double zSpeed) {
-        super(clientWorld, x, y, z, xSpeed, ySpeed, zSpeed);
-
-        this.spriteProvider = spriteProvider;
+public class Puff extends BillboardParticle {
+    protected Puff(ClientWorld world, double x, double y, double z, Sprite sprite) {
+        super(world, x, y, z, sprite);
 
         this.velocityMultiplier = 0.8f;
         this.maxAge = 40;
 
         this.scale(2.0f);
 
-        this.setSpriteForAge(spriteProvider);
+        //this.setSpriteForAge(spriteProvider);
 
         this.red = 1f;
         this.green = 1f;
@@ -38,7 +35,7 @@ public class Puff extends SpriteBillboardParticle {
     public void tick() {
         super.tick();
 
-        this.setSpriteForAge(this.spriteProvider);
+        //this.setSpriteForAge(this.spriteProvider);
 
         int fadeDuration = 5;
 
@@ -54,8 +51,8 @@ public class Puff extends SpriteBillboardParticle {
     }
 
     @Override
-    public ParticleTextureSheet getType() {
-        return ParticleTextureSheet.PARTICLE_SHEET_TRANSLUCENT;
+    protected RenderType getRenderType() {
+        return RenderType.PARTICLE_ATLAS_TRANSLUCENT;
     }
 
     @Override
@@ -70,11 +67,9 @@ public class Puff extends SpriteBillboardParticle {
             this.spriteProvider = spriteProvider;
         }
 
-        @Nullable
         @Override
-        public Particle createParticle(SimpleParticleType parameters, ClientWorld world, double x, double y, double z,
-                                       double velocityX, double velocityY, double velocityZ) {
-            return new Puff(world, x, y, z, this.spriteProvider, velocityX, velocityY, velocityZ);
+        public @org.jspecify.annotations.Nullable Particle createParticle(SimpleParticleType parameters, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, Random random) {
+            return new Puff(world, x, y, z, this.spriteProvider.getFirst());
         }
     }
 }

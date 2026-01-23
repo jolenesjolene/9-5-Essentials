@@ -22,7 +22,7 @@ public class CoffeeGumItem extends Item {
 
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand) {
-        World world = player.getWorld();
+        World world = player.getEntityWorld();
 
         if (entity instanceof WolfEntity wolf) {
             if (wolf.isTamed() && wolf.getHealth() < wolf.getMaxHealth()) {
