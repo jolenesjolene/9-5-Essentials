@@ -83,7 +83,6 @@ public class DiceBlock extends FallingBlock {
         return true;
     }
 
-    @Override
     protected int getComparatorOutput(BlockState state, World world, BlockPos pos, Direction direction) {
         return getRollFromFacing(state.get(FACING));
     }
