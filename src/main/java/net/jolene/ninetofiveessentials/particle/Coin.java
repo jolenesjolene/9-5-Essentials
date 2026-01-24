@@ -89,7 +89,7 @@ public class Coin extends BillboardParticle {
         }
 
         @Override
-        public @org.jspecify.annotations.Nullable Particle createParticle(SimpleParticleType parameters, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, Random random) {
+        public @Nullable Particle createParticle(SimpleParticleType parameters, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, Random random) {
             return new Coin(world, x, y, z, this.spriteProvider.getFirst());
         }
     }

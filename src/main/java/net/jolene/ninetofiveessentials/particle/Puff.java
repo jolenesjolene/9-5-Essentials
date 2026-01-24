@@ -68,7 +68,7 @@ public class Puff extends BillboardParticle {
         }
 
         @Override
-        public @org.jspecify.annotations.Nullable Particle createParticle(SimpleParticleType parameters, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, Random random) {
+        public @Nullable Particle createParticle(SimpleParticleType parameters, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, Random random) {
             return new Puff(world, x, y, z, this.spriteProvider.getFirst());
         }
     }
