@@ -31,7 +31,6 @@ public class NineToFiveEssentials implements ModInitializer {
 		ModSounds.registerModSounds();
 		ModParticles.registerModParticles();
 		ModLootTableModifiers.registerLootTableModifiers();
-		ModItemTooltips.registerModItemTooltips();
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(Potions.WATER, ModItems.COFFEE_BEANS, ModPotions.COFFEE);
 		});

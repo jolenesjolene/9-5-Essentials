@@ -4,6 +4,7 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockRenderLayerMap;
 import net.jolene.ninetofiveessentials.block.ModBlocks;
+import net.jolene.ninetofiveessentials.item.ModItemTooltips;
 import net.jolene.ninetofiveessentials.particle.Coin;
 import net.jolene.ninetofiveessentials.particle.ModParticles;
 import net.jolene.ninetofiveessentials.particle.Puff;
@@ -17,5 +18,6 @@ public class NineToFiveEssentialsClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(ModParticles.COIN, Coin.Factory::new);
         BlockRenderLayerMap.putBlock(ModBlocks.HEMP_PLANT, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.COFFEE_BUSH, BlockRenderLayer.CUTOUT);
+        ModItemTooltips.registerModItemTooltips();
     }
 }

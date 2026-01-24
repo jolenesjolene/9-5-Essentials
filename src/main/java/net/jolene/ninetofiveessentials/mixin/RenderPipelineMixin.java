@@ -12,21 +12,21 @@ import java.util.Arrays;
 
 @Mixin(RenderPipeline.class)
 public class RenderPipelineMixin {
-    @Unique private static boolean hasModified = false;
-    @ModifyVariable(method = "builder", at = @At("HEAD"), argsOnly = true)
-    private static RenderPipeline.Snippet[] modifySnippets(RenderPipeline.Snippet[] snippets)
-    {
-        if (hasModified)
-            return snippets;
-        if (snippets.length == 1)
-        {
-            if (snippets[0].equals(RenderPipelines.TRANSFORMS_PROJECTION_FOG_SNIPPET))
-            {
-                snippets = new RenderPipeline.Snippet[]{snippets[0], RenderPipelines.GLOBALS_SNIPPET};
-                hasModified = true;
-            }
-        }
-
-        return snippets;
-    }
+//    @Unique private static boolean hasModified = false;
+//    @ModifyVariable(method = "builder", at = @At("HEAD"), argsOnly = true)
+//    private static RenderPipeline.Snippet[] modifySnippets(RenderPipeline.Snippet[] snippets)
+//    {
+//        if (hasModified)
+//            return snippets;
+//        if (snippets.length == 1)
+//        {
+//            if (snippets[0].equals(RenderPipelines.TRANSFORMS_PROJECTION_FOG_SNIPPET))
+//            {
+//                snippets = new RenderPipeline.Snippet[]{snippets[0], RenderPipelines.GLOBALS_SNIPPET};
+//                hasModified = true;
+//            }
+//        }
+//
+//        return snippets;
+//    }
 }
