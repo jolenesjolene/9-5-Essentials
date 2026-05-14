@@ -42,11 +42,9 @@ public class ModItems {
     public static final Item HEMP_LEAVES = registerItem("hemp_leaves", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"hemp_leaves")))));
 
-    public static final Item DRIED_HEMP = registerItem("dried_hemp", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"dried_hemp")))));
+    public static final Item CURED_HEMP = registerItem("cured_hemp", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"cured_hemp")))));
 
-    public static final Item BROWNIE = registerItem("brownie", new Item(new Item.Settings().food(ModFoodComponents.BROWNIE)
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"brownie")))));
     public static final Item FUNKY_BROWNIE = registerItem("funky_brownie", new Item(new Item.Settings().food(ModFoodComponents.FUNKY_BROWNIE,ModFoodComponents.BROWNIE_EFFECT)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"funky_brownie")))));
 
@@ -56,8 +54,6 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_cherries")))));
     public static final Item COFFEE_BEANS = registerItem("coffee_beans", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_beans")))));
-    public static final Item COFFEE_GUM = registerItem("coffee_gum", new CoffeeGumItem(new Item.Settings().food(ModFoodComponents.COFFEE_GUM, ModFoodComponents.GUM_EFFECT)
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"coffee_gum")))));
 
     public static final Item DARK_IS_THE_NIGHT_MUSIC_DISC = registerItem("dark_is_the_night_music_disc",
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.DARK_IS_THE_NIGHT_KEY)
@@ -68,6 +64,16 @@ public class ModItems {
     public static final Item BERET = registerItem("beret", new BeretItem(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"beret"))).maxCount(1)));
 
+    public static final Item VODKA = registerItem("vodka", new Item(new Item.Settings().food(ModFoodComponents.VODKA)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"vodka")))));
+
+    public static final Item BEER = registerItem("beer", new Item(new Item.Settings().food(ModFoodComponents.BEER)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"beer")))));
+
+    public static final Item WINE = registerItem("wine", new Item(new Item.Settings().food(ModFoodComponents.WINE)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"wine")))));
+    public static final Item WHISKEY = registerItem("whiskey", new Item(new Item.Settings().food(ModFoodComponents.WHISKEY)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NineToFiveEssentials.MOD_ID,"whiskey")))));
 
 
     public static final Item COIN = registerItem("coin", new Item(new Item.Settings()
@@ -103,9 +109,7 @@ public class ModItems {
             entries.add(CIGARETTE_BUTT);
             entries.add(FUNKY_CIGARETTE);
             entries.add(COFFEE_CHERRIES);
-            entries.add(COFFEE_GUM);
             entries.add(BAGUETTE);
-            entries.add(BROWNIE);
             entries.add(FUNKY_BROWNIE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
@@ -113,7 +117,7 @@ public class ModItems {
             entries.add(TAR_BRICK);
             entries.add(COFFEE_BEANS);
             entries.add(HEMP_LEAVES);
-            entries.add(DRIED_HEMP);;
+            entries.add(CURED_HEMP);;
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(ModItems.HEMP_SEEDS);

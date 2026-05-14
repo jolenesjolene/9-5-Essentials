@@ -22,18 +22,22 @@ public class ModItemGroups {
 
                             entries.add(ModItems.CIGARETTE);
                             entries.add(ModItems.CIGARETTE_BUTT);
+                            entries.add(ModBlocks.CIGARETTE_ASH);
                             entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
                             entries.add(ModItems.TAR_GLOB);
                             entries.add(ModItems.TAR_BRICK);
                             entries.add(ModBlocks.TAR_BRICKS);
                             entries.add(ModBlocks.TAR_BRICK_STAIRS);
                             entries.add(ModBlocks.TAR_BRICK_SLAB);
+                            entries.add(ModBlocks.TAR_BRICK_WALL);
                             entries.add(ModItems.DARK_IS_THE_NIGHT_MUSIC_DISC);
                             entries.add(ModItems.FUNKY_CIGARETTE);
                             entries.add(ModItems.HEMP_SEEDS);
                             entries.add(ModItems.HEMP_LEAVES);
-                            entries.add(ModItems.DRIED_HEMP);
-                            entries.add(ModItems.BROWNIE);
+                            entries.add(ModBlocks.HEMP_SACK);
+                            entries.add(ModBlocks.DRIED_HEMP_SACK);
+                            entries.add(ModBlocks.CURED_HEMP_SACK);
+                            entries.add(ModItems.CURED_HEMP);
                             entries.add(ModItems.FUNKY_BROWNIE);
                             entries.add(ModItems.FUNKY_CIGARETTE_MUSIC_DISC);
                             entries.add(ModBlocks.BRITNEY);
@@ -48,8 +52,16 @@ public class ModItemGroups {
                             ItemStack coffeeArrow = PotionContentsComponent.createStack(Items.TIPPED_ARROW, ModPotions.COFFEE);
                             entries.add(coffeeArrow);
                             entries.add(ModItems.COFFEE_CHERRIES);
+                            entries.add(ModBlocks.COFFEE_CHERRIES_SACK);
                             entries.add(ModItems.COFFEE_BEANS);
-                            entries.add(ModItems.COFFEE_GUM);
+                            entries.add(ModBlocks.COFFEE_BEAN_SACK);
+                            entries.add(ModBlocks.AGED_BARREL);
+                            entries.add(ModItems.VODKA);
+                            entries.add(ModItems.BEER);
+                            entries.add(ModItems.WINE);
+                            entries.add(ModItems.WHISKEY);
+                            entries.add(ModBlocks.UGLY_WALLPAPER);
+                            entries.add(ModBlocks.UGLY_CARPET);
 
                         }).build());
 

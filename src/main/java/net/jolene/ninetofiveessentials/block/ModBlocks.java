@@ -23,26 +23,48 @@ public class ModBlocks {
     public static final Block BRITNEY = registerBlock("britney",
             AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
 
+    public static final Block CIGARETTE_ASH = registerBlock("cigarette_ash",
+            AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
+
     public static final Block FIVE_HUNDRED_CIGARETTES = registerBlock("five_hundred_cigarettes",
             AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
 
     public static final Block TAR_BRICKS = registerBlock("tar_bricks",
-            properties -> new Block(properties.strength(3f).requiresTool()));
+            properties -> new Block(properties.strength(2f).requiresTool()));
     public static final Block TAR_BRICK_SLAB = registerBlock("tar_brick_slab",
             properties -> new SlabBlock(properties.strength(2f).requiresTool()));
     public static final Block TAR_BRICK_STAIRS = registerBlock("tar_brick_stairs",
             properties -> new StairsBlock(ModBlocks.TAR_BRICKS.getDefaultState(),
                     properties.strength(2f).requiresTool()));
+    public static final Block TAR_BRICK_WALL = registerBlock("tar_brick_wall",
+            properties -> new WallBlock(properties.strength(2f).requiresTool()));
 
 
     public static final Block HEMP_PLANT = registerBlockWithoutBlockItem("hemp",
             properties -> new HempPlantBlock(properties.noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block HEMP_SACK = registerBlock("hemp_sack",
+            AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
+    public static final Block DRIED_HEMP_SACK = registerBlock("dried_hemp_sack",
+            AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
+    public static final Block CURED_HEMP_SACK = registerBlock("cured_hemp_sack",
+            AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
     public static final Block COFFEE_BUSH = registerBlockWithoutBlockItem("coffee",
             properties -> new CoffeeBushBlock(properties.noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block COFFEE_CHERRIES_SACK = registerBlock("coffee_cherries_sack",
+            AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
+    public static final Block COFFEE_BEAN_SACK = registerBlock("coffee_bean_sack",
+            AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
+    public static final Block AGED_BARREL = registerBlock("aged_barrel",
+            AbstractBlock.Settings.copy(Blocks.BARREL));
+    public static final Block UGLY_WALLPAPER = registerBlock("ugly_wallpaper",
+            AbstractBlock.Settings.copy(Blocks.BLACK_WOOL));
+    public static final Block UGLY_CARPET = registerBlock("ugly_carpet",
+            AbstractBlock.Settings.copy(Blocks.BLACK_CARPET));
+
 
     public static final Block DICE = registerBlockWithItem("dice",
             settings -> new DiceBlock(
@@ -106,6 +128,7 @@ public class ModBlocks {
             entries.add(ModBlocks.TAR_BRICKS);
             entries.add(ModBlocks.TAR_BRICK_STAIRS);
             entries.add(ModBlocks.TAR_BRICK_SLAB);
+            entries.add(ModBlocks.TAR_BRICK_WALL);
             entries.add(ModBlocks.FIVE_HUNDRED_CIGARETTES);
         });
     }

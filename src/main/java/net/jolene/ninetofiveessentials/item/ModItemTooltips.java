@@ -21,9 +21,6 @@ public class ModItemTooltips {
             if (itemStack.isOf(ModItems.LIT_FUNKY_CIGARETTE)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.lit_funky_cigarette"));
             }
-            if (itemStack.isOf(ModItems.COFFEE_GUM)) {
-                list.add(Text.translatable("tooltip.ninetofiveessentials.coffee_gum"));
-            }
             if (itemStack.isOf(ModItems.FUNKY_BROWNIE)) {
                 list.add(Text.translatable("tooltip.ninetofiveessentials.funky_brownie"));
             }
